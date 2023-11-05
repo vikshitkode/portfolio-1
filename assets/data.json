@@ -1,0 +1,157 @@
+{
+	"greeting": {
+		"heading": "Hello, World!",
+		"description": "I make things for iOS and the Web.\nLooking for my first job"
+	},
+	"intro": {
+		"heading": "You know, I'm something of a (computer) scientist myself.",
+		"description": "I enjoy experimenting with technologies with the ultimate goal of creating functional and user-friendly software. Many of my projects initially aimed to solve personal problems but have since found utility among family members and a global audience. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!\nHaving graduated from Douglas College a year ago, I'm currently pursuing my bachelor's at Simon Fraser University. I look forward to the exciting opportunities and challenges that lie ahead!"
+	},
+	"skills": {
+		"heading": "Skills",
+		"color": "#e66702",
+		"muted_color": "#eb8534",
+		"description": "I've always enjoyed exploring and experimenting with a wide range of technologies, though I haven't taken the time to get particularly skilled in any specific one. Instead, my strength lies in my ability to quickly grasp new concepts and adapt to different programming languages and platforms. This flexibility has allowed me to successfully pull off a diverse array of projects of all shapes and sizes!",
+		"list": [
+			{
+				"heading": "Web development",
+				"cover_description": "While I've been exposed to a range of web development technologies, my recent focus has been on building websites and web applications using fundamental web technologies: vanilla HTML, CSS, and JavaScript.",
+				"description": "Most of my recent web-based projects revolve around web apps created using the core building blocks of web development: vanilla HTML, CSS, and JavaScript. Occasionally, I've ventured into using jQuery and Bootstrap for the sheer pleasure of exploring new libraries, even when it wasn't strictly necessary! 😅\nWhile my academic courses and projects introduced me to more advanced technologies like Node.js, Express, and React, I've found that my personal projects thrive on the simplicity and elegance of vanilla JavaScript and GitHub Pages. They've been my go-to tools, delivering the results I need efficiently.\nThis portfolio was crafted using vanilla HTML, CSS, JavaScript, and a pinch of Bootstrap for a responsive design.",
+				"img": "assets/img/iphone-altsource-viewer1.png",
+				"img_type": "device",
+				"img_alt": "iphone-web-app",
+				"bootstrap_icon": "bi-globe2",
+				"md_size": 6
+			},
+			{
+				"heading": "Mobile development",
+				"cover_description": "As an ardent Apple enthusiast, I've spent a good chunk of my free time diving into iOS and, more recently, getting the hang of iOS app and tweak development.",
+				"description": "My fascination with user-friendly software dates back to my childhood. This passion eventually led me to explore iOS development. Along the way, I embarked on various mini-projects to familiarize myself with the different iOS frameworks and guidelines.\nMore recently, I ventured into iOS tweak development, driven by a minor annoyance in the iOS YouTube app. The result? \"DontEatMyContent,\" a tweak that ingeniously prevents display cutouts from cutting into video content.\nI also got introduced to Android development through my college coursework, and that's I came up with \"BCExplorer.\" This app is all about making the most out of your stay in British Columbia by showcasing some fantastic attractions you shouldn't miss.",
+				"img": "assets/img/iphone-today1.png",
+				"img_type": "device",
+				"img_alt": "iphone-app",
+				"bootstrap_icon": "bi-phone",
+				"md_size": 6
+			},
+			{
+				"heading": "Automation & scripting",
+				"cover_description": "Command-line tools are kinda like me—unassuming in appearance but highly effective at getting the job done without unnecessary frills.",
+				"description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a range of tasks, from compiling simple C code to more complex tweak-injected iOS applications to tinkering with system services. Whether it's streamlining processes or automating repetitive tasks, Shell scripting has been my go-to tool. Its versatility and compatibility with Unix-based systems make it the ideal solution for streamlining processes and automating repetitive tasks.",
+				"img": "assets/img/window-terminal.png",
+				"img_type": "window",
+				"img_alt": "terminal",
+				"center_image": true,
+				"bootstrap_icon": "bi-terminal",
+				"md_size": 6,
+				"lg_size": 8
+			},
+			{
+				"heading": "Database programming",
+				"cover_description": "Why did the database engineer leave his wife?",
+				"description": "🥁 \"She had one-to-many relationships.\" 🥁\nThrough my college coursework, I've delved into the world of databases, mastering both relational and non-relational databse systems. My journey has involved refining skills in schema design, query optimization, and adapting to the flexibility of NoSQL models.",
+				"center_image": true,
+				"bootstrap_icon": "bi-hdd-rack",
+				"md_size": 6,
+				"lg_size": 4
+			}
+		]
+	},
+	"github_username": "therealFoxster",
+	"projects": {
+		"heading": "Project Highlights",
+		"color": "#f63e54",
+		"muted_color": "#f76476",
+		"description": "Still thinking of a good description for this section...",
+		"list": [
+			{
+				"heading": "DontEatMyContent",
+				"cover_description": "Prevent the notch/Dynamic Island from munching on 2:1 video content in YouTube.",
+				"topics": ["c", "ios", "youtube", "objective-c", "reverse-engineering", "iphone", "notch", "dynamic-island"],
+				"img": "assets/img/iphone-donteatmycontent.png",
+				"img_type": "device landscape",
+				"img_alt": "donteatmycontent-demo",
+				"center_image": true,
+				"md_size": 6,
+				"lg_size": 8
+			},
+			{
+				"heading": "altsource-viewer",
+				"cover_description": "View your favorite AltStore source.",
+				"topics": ["javascript", "css", "html", "ios", "altstore", "altstore-beta", "altstore-repo", "altstore-source"],
+				"img": "assets/img/iphone-altsource-viewer2.png",
+				"max_width": "350px",
+				"img_type": "device",
+				"img_alt": "altsource-demo",
+				"md_size": 6,
+				"lg_size": 4
+			},
+			{
+				"heading": "Today",
+				"cover_description": "A simple and calming reminders app.",
+				"topics": ["swift", "uikit", "reminders", "eventkit"],
+				"img": "assets/img/iphone-today2.png",
+				"img_type": "device",
+				"img_alt": "css3uitableview-demo",
+				"max_width": "350px",
+				"md_size": 6,
+				"lg_size": 4
+			},
+			{
+				"heading": "ExplodingMonkeys",
+				"cover_description": "MS-DOS Gorillas (GORILLA.BAS) remade with Swift.",
+				"topics": ["swift", "spritekit", "uikit", "coregraphics", "ipados"],
+				"img": "assets/img/ipad-exploding-monkeys.png",
+				"img_type": "device landscape",
+				"img_alt": "people-demo",
+				"md_size": 6,
+				"lg_size": 8
+			},
+			{
+				"not_on_github": true,
+				"heading": "portfolio",
+				"cover_description": "The web page you're looking at. Made with vanilla HTML, CSS, JavaScript, and a pinch of Bootstrap for a responsive design.",
+				"topics": ["html", "css", "javascript", "bootstrap", "portfolio"],
+				"img": "assets/img/window-portfolio.png",
+				"img_type": "window",
+				"img_alt": "portfolio-demo",
+				"center_image": true,
+				"md_size": 6,
+				"lg_size": 8
+			},
+			{
+				"not_on_github": true,
+				"heading": "Foxster",
+				"cover_description": "YouTube channel dedicated to uploading electronic music in the NCS video layout.",
+				"custom_url": "https://youtube.com/FoxsterFanmade",
+				"custom_url_text": "View on YouTube",
+				"topics": ["youtube", "music", "video", "vfx"],
+				"img": "assets/img/iphone-foxster-fanmade2.png",
+				"img_type": "device",
+				"img_alt": "foxster-fanmade-youtube",
+				"max_width": "350px",
+				"md_size": 6,
+				"lg_size": 4
+			}
+		]
+	},
+	"socials": [
+		{
+			"platform": "instagram",
+			"username": "therealFoxster"
+		},
+		{
+			"platform": "reddit",
+			"username": "therealFoxster",
+			"username_prefix": "u/"
+		},
+		{
+			"platform": "youtube",
+			"username": "foxster-mp4"
+		},
+		{
+			"platform": "linkedin",
+			"username": "huybui-vq",
+			"username_prefix": "in/"
+		}
+	]
+}
