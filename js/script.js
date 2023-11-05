@@ -15,16 +15,13 @@ const skillsTileContainer = document.querySelector("#skills>div>.row");
 const projectTileContainer = document.querySelector("#projects>div .row");
 
 function requestResume() {
+    contactSection.scrollIntoView(scrollIntoViewOptions);
     const checkbox = document.querySelector("#contact .plus-go-x>input");
     const message = document.querySelector("#contact #message");
-    message.value = "Hello!\nI'd like to take a look at your resume.";
-
+    message.value = "Hello, I'd like to take a look at your resume.";
     if (checkbox.checked) return;
-
-    setTimeout(_ => {
-        checkbox.checked = true;
-        checkbox.dispatchEvent(new Event("change"));
-    }, 1300);
+    checkbox.checked = true;
+    checkbox.dispatchEvent(new Event("change"));
 }
 
 fetchJSON("assets/data.json").then(data => {
