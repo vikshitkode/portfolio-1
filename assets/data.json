@@ -146,7 +146,8 @@
 		},
 		{
 			"platform": "youtube",
-			"username": "foxster-mp4"
+			"username": "foxster.mp4",
+			"username_prefix": "@"
 		},
 		{
 			"platform": "instagram",
