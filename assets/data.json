@@ -136,8 +136,8 @@
 	},
 	"socials": [
 		{
-			"platform": "instagram",
-			"username": "maybehuy"
+			"platform": "github",
+			"username": "therealFoxster"
 		},
 		{
 			"platform": "reddit",
@@ -147,6 +147,10 @@
 		{
 			"platform": "youtube",
 			"username": "foxster-mp4"
+		},
+		{
+			"platform": "instagram",
+			"username": "maybehuy"
 		},
 		{
 			"platform": "linkedin",
