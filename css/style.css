@@ -328,7 +328,7 @@ img.window {
 }
 #greeting p:first-of-type::after {
   /* animation: loading 3.75s infinite; */
-  content: "...";
+  /* content: "..."; */
 }
 
 /* Contact section */
