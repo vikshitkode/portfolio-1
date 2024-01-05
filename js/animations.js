@@ -57,9 +57,10 @@ const sendIcon = document.getElementById("send-icon");
 addIntersectionObserverFor(sendIcon, (entries, observer) => {
     if (entries[0].isIntersecting == true) {
         sendIcon.style.animation = "slide_diag_up 0.75s both 0.5s";
-    } else {
-        sendIcon.style.animation = null;
-    }
+    } 
+    // else {
+    //     sendIcon.style.animation = null;
+    // }
 });
 
 //
@@ -87,7 +88,7 @@ document.querySelector(".goto-projects").addEventListener("click", () => project
 document.querySelector(".goto-contact").addEventListener("click", () => contactSection.scrollIntoView(scrollIntoViewOptions));
 
 // Go to resume section
-document.querySelector(".goto-resume").addEventListener("click", () => resumeSection.scrollIntoView({
+document.querySelector(".goto-resume")?.addEventListener("click", () => resumeSection.scrollIntoView({
     behavior: "auto",
     block: "center"
 }));
