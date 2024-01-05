@@ -327,7 +327,8 @@ img.window {
   height: 100vh;
 }
 #greeting p:first-of-type::after {
-  animation: loading 3.75s infinite;
+  /* animation: loading 3.75s infinite; */
+  content: "...";
 }
 
 /* Contact section */
@@ -745,4 +746,98 @@ i.bi.bi-chevron-right, i.bi.bi-chevron-down {
 @-webkit-keyframes memoji-3 {
   from { transform: translate(-60px, 80px); opacity: 0; }
     to { transform: translate(0px, 0px); opacity: 1; }
+}
+
+#navbar .navbar-brand::after {
+  /* animation: navbar-brand 10s infinite; */
+}
+@keyframes navbar-brand {
+  0% { content: ""; }
+  1% { content: "H"; }
+  2% { content: "Hu"; }
+  3% { content: "Huy"; }
+  4% { content: "Huy B"; }
+  5% { content: "Huy Bu"; }
+  6% { content: "Huy Bui"; }
+  34% { content: "Huy Bui"; }
+  35% { content: "Huy Bu"; }
+  36% { content: "Huy B"; }
+  37% { content: "Huy"; }
+  38% { content: "Hu"; }
+  39% { content: "H"; }
+  40% { content: ""; }
+
+  41% { content: "t"; }
+  42% { content: "th"; }
+  43% { content: "the"; }
+  44% { content: "ther"; }
+  45% { content: "there"; }
+  46% { content: "therea"; }
+  47% { content: "thereal"; }
+  48% { content: "therealF"; }
+  49% { content: "therealFo"; }
+  50% { content: "therealFox"; }
+  51% { content: "therealFoxs"; }
+  52% { content: "therealFoxst"; }
+  53% { content: "therealFoxste"; }
+  54% { content: "therealFoxster"; }
+  87% { content: "therealFoxster"; }
+  88% { content: "therealFoxste"; }
+  89% { content: "therealFoxst"; }
+  90% { content: "therealFoxs"; }
+  91% { content: "therealFox"; }
+  92% { content: "therealFo"; }
+  93% { content: "therealF"; }
+  94% { content: "thereal"; }
+  95% { content: "therea"; }
+  96% { content: "there"; }
+  97% { content: "ther"; }
+  98% { content: "the"; }
+  99% { content: "th"; }
+  100% { content: "t"; }
+}
+@-webkit-keyframes navbar-brand {
+  0% { content: ""; }
+  1% { content: "H"; }
+  2% { content: "Hu"; }
+  3% { content: "Huy"; }
+  4% { content: "Huy B"; }
+  5% { content: "Huy Bu"; }
+  6% { content: "Huy Bui"; }
+  34% { content: "Huy Bui"; }
+  35% { content: "Huy Bu"; }
+  36% { content: "Huy B"; }
+  37% { content: "Huy"; }
+  38% { content: "Hu"; }
+  39% { content: "H"; }
+  40% { content: ""; }
+
+  41% { content: "t"; }
+  42% { content: "th"; }
+  43% { content: "the"; }
+  44% { content: "ther"; }
+  45% { content: "there"; }
+  46% { content: "therea"; }
+  47% { content: "thereal"; }
+  48% { content: "therealF"; }
+  49% { content: "therealFo"; }
+  50% { content: "therealFox"; }
+  51% { content: "therealFoxs"; }
+  52% { content: "therealFoxst"; }
+  53% { content: "therealFoxste"; }
+  54% { content: "therealFoxster"; }
+  87% { content: "therealFoxster"; }
+  88% { content: "therealFoxste"; }
+  89% { content: "therealFoxst"; }
+  90% { content: "therealFoxs"; }
+  91% { content: "therealFox"; }
+  92% { content: "therealFo"; }
+  93% { content: "therealF"; }
+  94% { content: "thereal"; }
+  95% { content: "therea"; }
+  96% { content: "there"; }
+  97% { content: "ther"; }
+  98% { content: "the"; }
+  99% { content: "th"; }
+  100% { content: "t"; }
 }
