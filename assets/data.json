@@ -98,7 +98,7 @@
 			},
 			{
 				"heading": "Pairs",
-				"cover_description": "A simple but fun matching game.",
+				"cover_description": "A simple but fun card matching game.",
 				"topics": ["swift", "ios", "uikit", "catransform3d"],
 				"img": "assets/img/ipad-pairs.png",
 				"img_type": "device landscape",
