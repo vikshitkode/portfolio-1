@@ -13,7 +13,7 @@ const lightOutlineButtons = document.querySelectorAll(".btn-outline-light"); // 
 const matteLightTexts = document.querySelectorAll(".text-matte-light");
 const sections = document.querySelectorAll(".section");
 const miscelllaneousElements = document.querySelectorAll("#main-container, body, footer");
-let lightTexts, whiteBackgroundElements, offWhiteBackgroundElements; // Programmatically added elements
+let lightTexts, whiteBackgroundElements, offWhiteBackgroundElements, appIcons; // Programmatically added elements
 // Toggles
 const lightAppearanceToggle = document.getElementById("light-appearance");
 const darkAppearanceToggle = document.getElementById("dark-appearance");
@@ -63,6 +63,7 @@ function toggleLightAppearance() {
     lightTexts.forEach(text => text.classList.add("text-dark"));
     whiteBackgroundElements.forEach(element => element.classList.remove("bg-off-black"));
     offWhiteBackgroundElements.forEach(element => element.classList.remove("bg-black"));
+    appIcons.forEach(element => element.classList.remove("dark"));
 }
 
 function toggleDarkAppearance() {
@@ -79,6 +80,7 @@ function toggleDarkAppearance() {
     lightTexts.forEach(text => text.classList.remove("text-dark"));
     whiteBackgroundElements.forEach(element => element.classList.add("bg-off-black"));
     offWhiteBackgroundElements.forEach(element => element.classList.add("bg-black"));
+    appIcons.forEach(element => element.classList.add("dark"));
 }
 
 function toggleAutoAppearance() {
@@ -97,6 +99,7 @@ function refreshAppearanceForProgrammaticallyAddedElements() {
     lightTexts = document.querySelectorAll(".text-light");
     offWhiteBackgroundElements = document.querySelectorAll(".bg-off-white, .bg-off-white2");
     whiteBackgroundElements = document.querySelectorAll(".bg-white");
+    appIcons = document.querySelectorAll(".app-icon")
     setPreferredAppearance(appearance);
 }
 
