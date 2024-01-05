@@ -78,8 +78,9 @@ fetchJSON("assets/data.json").then(data => {
 
     // Successfully fetched data from GitHub API
     Promise.all(projectPromises).then((tiles) => {
-        tiles.forEach(tile => projectTileContainer.insertAdjacentHTML("beforeend", tile));
-        projectTiles.forEach(tile => projectTileContainer.insertAdjacentHTML("beforeend", tile));
+        // tiles.forEach(tile => projectTileContainer.insertAdjacentHTML("beforeend", tile));
+        // projectTiles.forEach(tile => projectTileContainer.insertAdjacentHTML("beforeend", tile));
+        projectTiles.forEach(tile => document.getElementById("source-code").insertAdjacentHTML("beforebegin", tile));
         refreshAppearanceForProgrammaticallyAddedElements();
     }).catch(error => console.error(error));
 

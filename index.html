@@ -67,15 +67,15 @@
           <li class="nav-item mx-md-1">
             <a href="#contact" class="nav-link goto-contact"
             data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-              Contact
+              Contact me
             </a>
           </li>
-          <li class="nav-item mx-md-1">
+          <!-- <li class="nav-item mx-md-1">
             <a href="#resume" class="nav-link goto-resume"
             data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
               Learn more
             </a>
-          </li>
+          </li> -->
         </ul>
         <!-- View resume button -->
         <!-- <button id="resume" class="btn btn-outline-light btn-sm text-uppercase fw-kinda-bold" onclick="viewResume();">
@@ -222,7 +222,50 @@
           </a>
         </div>
         <!-- Projects tiles -->
-        <div class="row row-cols-1 g-3 g-md-4"></div>
+        <div class="row row-cols-1 g-3 g-md-4">
+          <div id="source-code" class="bg-off-white2"><!-- section container-fluid pb-4 -->
+            <div> <!-- class="section-inner-container" -->
+              <div class="row row-cols-1 g-3 g-md-4">
+                <div class="col">
+                  <div class="tile bg-white rounded-5 d-flex flex-column"
+                  style="min-height: unset !important;
+                  background: linear-gradient(15deg, var(--my-blueish-grey), var(--my-light-blueish-grey));">
+                    <div class="p-4-5 p-md-5" style="padding-bottom: 0!important;">
+                      <h5 class="text-white">
+                        portfolio
+                      </h5>
+                    </div>
+                    <!-- Content -->
+                    <div class="tile-content row row-cols-1" style="height: 70vh">
+                      <!-- Text -->
+                      <div class="col col-md-5 d-flex flex-row align-items-center p-5">
+                        <div class="text-center text-sm-start px-3 ps-lg-5 mb-md-5">
+                          <h2 class="text-white mb-3">
+                            Discover how this web page was built.
+                          </h2>
+                          <a href="https://github.com/therealFoxster/portfolio" role="button"
+                          id="open-github" class="fs-6 link-light fw-normal">
+                            <span class="link-text">
+                              View on GitHub
+                            </span>
+                            <i class="bi bi-chevron-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- Image -->
+                      <div class="col col-md-7
+                      d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
+                      style="z-index: -1;">
+                        <img src="assets/img/macbook-code+portfolio.png" alt="portfolio+code"
+                        class="device macbook ms-5 ms-lg-0">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div> <!-- End project section -->
     <!-- 
@@ -232,7 +275,7 @@
       <div class="section-inner-container">
         <!-- Section heading -->
         <h2 class="p-4 p-md-5 pd-tb-1-5-rem"style="color: var(--my-purple);">
-          Contact
+          Contact me
         </h2>
         <!-- Tiles -->
         <div class="row row-cols-1 g-3 g-md-4">
@@ -340,7 +383,7 @@
     <!-- 
       Resume
      -->
-    <div id="resume" class="section bg-off-white2 text-center p-4">
+    <div id="resume" class="section bg-off-white2 text-center p-4 d-none">
       <div class="d-flex flex-column align-items-center p-lg-5">
         <h2 class="text-light mb-3" style="max-width: 700px;">
           Learn more about my background and expertise.
@@ -352,46 +395,6 @@
           </span>
           <i class="bi bi-arrow-up-right-square ms-1" style="vertical-align: top;"></i>
         </a>
-      </div>
-    </div>
-    <!-- 
-      Source code
-     -->
-    <div id="source-code" class="section container-fluid bg-off-white2 pb-4">
-      <div class="section-inner-container">
-        <div class="row row-cols-1 g-3 g-md-4">
-          <div class="col">
-            <div class="tile bg-white rounded-5 d-flex flex-column"
-            style="min-height: unset !important;
-            background: linear-gradient(15deg, var(--my-blueish-grey), var(--my-light-blueish-grey));"> 
-              <!-- Content -->
-              <div class="tile-content row row-cols-1" style="height: 75vh">
-                <!-- Text -->
-                <div class="col col-md-5 d-flex flex-row align-items-center p-5">
-                  <div class="text-center text-sm-start px-3 ps-lg-5">
-                    <h2 class="text-white mb-3">
-                      Discover how this portfolio was built.
-                    </h2>
-                    <a href="https://github.com/therealFoxster/portfolio" role="button"
-                    id="open-github" class="fs-6 link-light fw-normal">
-                      <span class="link-text">
-                        View source code
-                      </span>
-                      <i class="bi bi-chevron-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- Image -->
-                <div class="col col-md-7
-                d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
-                style="z-index: -1;">
-                  <img src="assets/img/macbook-code+portfolio.png" alt="portfolio+code"
-                  class="device macbook ms-5 ms-lg-0">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <!-- 

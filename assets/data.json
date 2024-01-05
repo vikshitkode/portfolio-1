@@ -97,24 +97,22 @@
 				"lg_size": 4
 			},
 			{
+				"heading": "Pairs",
+				"cover_description": "A simple but fun matching game.",
+				"topics": ["swift", "ios", "uikit", "catransform3d"],
+				"img": "assets/img/ipad-pairs.png",
+				"img_type": "device landscape",
+				"img_alt": "pairs-demo",
+				"md_size": 6,
+				"lg_size": 8
+			},
+			{
 				"heading": "ExplodingMonkeys",
 				"cover_description": "MS-DOS Gorillas (GORILLA.BAS) remade with Swift.",
 				"topics": ["swift", "spritekit", "uikit", "coregraphics", "ipados"],
 				"img": "assets/img/ipad-exploding-monkeys.png",
 				"img_type": "device landscape",
-				"img_alt": "people-demo",
-				"md_size": 6,
-				"lg_size": 8
-			},
-			{
-				"not_on_github": true,
-				"heading": "portfolio",
-				"cover_description": "The web page you're looking at. Made with vanilla HTML, CSS, JavaScript, and a pinch of Bootstrap for a responsive design.",
-				"topics": ["html", "css", "javascript", "bootstrap", "portfolio"],
-				"img": "assets/img/window-portfolio.png",
-				"img_type": "window",
-				"img_alt": "portfolio-demo",
-				"center_image": true,
+				"img_alt": "exploding-monkeys-demo",
 				"md_size": 6,
 				"lg_size": 8
 			},
@@ -131,6 +129,19 @@
 				"max_width": "350px",
 				"md_size": 6,
 				"lg_size": 4
+			}
+		],
+		"old": [
+			{
+				"heading": "portfolio",
+				"cover_description": "The web page you're looking at. Made with vanilla HTML, CSS, JavaScript, and a pinch of Bootstrap for a responsive design.",
+				"topics": ["html", "css", "javascript", "bootstrap", "portfolio"],
+				"img": "assets/img/window-portfolio.png",
+				"img_type": "window",
+				"img_alt": "portfolio-demo",
+				"center_image": true,
+				"md_size": 6,
+				"lg_size": 8
 			}
 		]
 	},
