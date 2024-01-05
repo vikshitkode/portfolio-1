@@ -22,11 +22,12 @@
   <!-- 
     Nav bar
    -->
-  <nav id="navbar" class="navbar fixed-top navbar-expand-sm navbar-dark bg-blur">
+  <nav id="navbar" class="navbar navbar-expand-sm navbar-dark fixed-top bg-blur">
     <div class="container-sm d-flex flex-row justify-content-between">
-      <!-- pd-sm-lr-2 -->
-      <a id="title" class="navbar-brand fw-kinda-bold px-2"
-      data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Huy Bui</a>
+      <a id="title" class="navbar-brand fw-kinda-bold px-2" 
+      data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+        Huy Bui
+      </a>
       <!-- Nav bar toggler (mobile) -->
       <button id="navbar-toggler" class="navbar-toggler" type="button" 
       data-bs-toggle="collapse" data-bs-target="#navbar-content" 
@@ -41,33 +42,39 @@
         </div>
       </button>
       <!-- Nav bar items -->
-      <div class="collapse navbar-collapse flex-grow-0" id="navbar-content">
+      <div id="navbar-content" class="collapse navbar-collapse flex-grow-0">
         <!-- Links -->
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0 navbar-nav-scroll">
+        <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-sm-0">
           <li class="nav-item mx-md-1">
-            <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-            href="#intro" class="nav-link goto-intro">Introduction</a>
+            <a href="#intro" class="nav-link goto-intro"
+            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              Introduction
+            </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-            href="#skills" class="nav-link goto-skills">Skills</a>
+            <a href="#skills" class="nav-link goto-skills"
+            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              Skills
+            </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-            href="#projects" class="nav-link goto-projects">Projects</a>
+            <a href="#projects" class="nav-link goto-projects"
+            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              Projects
+            </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-            href="#contact" class="nav-link goto-contact">Contact</a>
+            <a href="#contact" class="nav-link goto-contact"
+            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              Contact
+            </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-            href="#resume" class="nav-link goto-resume">Learn more</a>
+            <a href="#resume" class="nav-link goto-resume"
+            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              Learn more
+            </a>
           </li>
-          <!-- <li class="nav-item mx-md-1">
-            <a data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-            href="#source-code" class="nav-link goto-source-code">Source Code</a>
-          </li> -->
         </ul>
         <!-- View resume button -->
         <!-- <button id="resume" class="btn btn-outline-light btn-sm text-uppercase fw-kinda-bold" onclick="viewResume();">
@@ -83,14 +90,16 @@
     <!-- 
       Greeting section
      -->
-    <div class="container-fluid p-5 pd-lr-3 d-flex flex-column justify-content-center" id="greeting">
+    <div id="greeting"
+    class="container-fluid d-flex flex-column justify-content-center p-5 pd-lr-3">
       <div>
-        <div class="text-center memoji-container">
-          <img src="assets/img/memoji-phone.png" alt="memoji-phone" class="memoji initially-hidden">
+        <div class="memoji-container text-center">
+          <img src="assets/img/memoji-phone.png" alt="memoji-phone"
+          class="initially-hidden memoji">
         </div>
-        <h1 class="text-white text-center display-2 fw-kinda-bold initially-hidden"></h1>
-        <p class="text-white text-center fs-4 fw-light initially-hidden"></p>
-        <p id="learn-more" class="text-muted text-center fs-5 fw-normal initially-hidden">
+        <h1 class="initially-hidden text-white text-center display-2 fw-kinda-bold"></h1>
+        <p class="initially-hidden text-white text-center fs-4 fw-light"></p>
+        <p id="learn-more" class="initially-hidden text-muted text-center fs-5 fw-normal">
           Scroll down to learn more <i class="bi bi-chevron-down"></i>
         </p>
       </div>
@@ -98,35 +107,50 @@
     <!-- 
       Intro section
      -->
-    <div class="section container-fluid bg-off-white2" id="intro">
+    <div id="intro"
+    class="section container-fluid bg-off-white2">
       <div class="section-inner-container">
-        <h2 class="p-4 p-md-5 pd-tb-1-5-rem" style="color: #027fff;">Introduction</h2>
+        <h2 class="p-4 p-md-5 pd-tb-1-5-rem" style="color: var(--my-blue);">
+          Introduction
+        </h2>
         <div class="row row-cols-1 g-3 g-md-4">
           <div class="col">
-            <div class="tile bg-white p-4-5 p-md-5 rounded-5 h-100 d-flex flex-column" style="min-height: unset !important;">
+            <div class="tile bg-white rounded-5 d-flex flex-column p-4-5 p-md-5 h-100"
+            style="min-height: unset !important;">
               <!-- Heading -->
-              <h5 style="color: #027fff;">A little bit about myself</h5>
+              <h5 style="color: var(--my-blue);">
+                A little bit about myself
+              </h5>
               <!-- Content -->
               <div class="tile-content row row-cols-1" style="height: 73vh; max-height: 650px !important;">
                 <!-- Text -->
-                <div class="col col-md-7 p-3 p-lg-5 d-flex align-items-center"><h2></h2></div>
+                <div class="col col-md-7 d-flex align-items-center p-3 p-lg-5">
+                  <h2></h2>
+                </div>
                 <!-- Image -->
-                <div class="col col-md-5 text-center d-flex align-items-center m-0" style="margin-top: -9vh !important; margin-bottom: 0 !important;">
-                  <img src="assets/img/memoji-laptop.png" alt="memoji-laptop" class="memoji-container w-100 m-0">
+                <div class="col col-md-5 d-flex align-items-center text-center m-0"
+                style="margin-top: -9vh !important; margin-bottom: 0 !important;">
+                  <img src="assets/img/memoji-laptop.png" alt="memoji-laptop"
+                  class="memoji-container w-100 m-0">
                 </div>
               </div>
               <!-- Overlay -->
-              <div class="tile-overlay p-4-5 p-md-5 fs-6 rounded-5 lh-md fw-kinda-bold initially-hidden d-none">
-                <div class="d-flex flex-column align-items-center justify-content-center h-100 w-100 text-white" style="margin: 0 auto;"><p></p></div>
+              <div class="initially-hidden tile-overlay rounded-5 d-none fw-kinda-bold lh-md p-4-5 p-md-5 fs-6">
+                <!-- Detail text -->
+                <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100" 
+                style="margin: 0 auto;">
+                  <p></p>
+                </div>
               </div>
               <!-- Overlay background -->
-              <span class="tile-overlay-background rounded-5" style="background-color: #027fff !important;"></span>
+              <span class="tile-overlay-background rounded-5" style="background: var(--my-blue) !important;"></span>
               <!-- Plus go x button -->
               <div class="plus-go-x-container">
                 <label class="plus-go-x">
                   <input type="checkbox" onChange="plusGoXHandler(event);">
                   <div class="p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill"
+                    width="16" height="16" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                     </svg>
                   </div>
@@ -140,90 +164,138 @@
     <!-- 
       Skills section
     -->
-    <div class="section container-fluid bg-off-white2" id="skills">
+    <div id="skills" 
+    class="section container-fluid bg-off-white2">
       <div class="section-inner-container">
-        <h2 class="p-4 p-md-5 pd-tb-1-5-rem" style="color: #e66702;">Skills</h2>
+        <!-- Section heading -->
+        <h2 class="p-4 p-md-5 pd-tb-1-5-rem" style="color: var(--my-orange);">
+          Skills
+        </h2>
+        <!-- Tiles -->
         <div class="row row-cols-1 g-3 g-md-4">
+          <!-- Overview tile -->
           <div class="col">
-            <div class="tile bg-white p-4 p-md-5 rounded-5 h-100 d-flex flex-column">
-              <h5 style="color: #e66702;">Overview</h5>
+            <div class="tile bg-white rounded-5 d-flex flex-column p-4 p-md-5 h-100">
+              <!-- Heading -->
+              <h5 style="color: var(--my-orange);">
+                Overview
+              </h5>
+              <!-- Content -->
               <div class="tile-content fw-kinda-bold lh-md">
-                <!-- Description -->
+                <!-- Detail text -->
                 <p></p>
+                <!-- Images -->
                 <div class="memoji-container text-center">
-                  <img src="assets/img/memoji-idea.png" alt="memoji-idea" class="memoji initially-hidden w-35-percent">
-                  <img src="assets/img/memoji-celebrate.PNG" alt="memoji-celebrate" class="memoji initially-hidden w-35-percent">
-                  <img src="assets/img/memoji-thinking.png" alt="memoji-thinking" class="memoji initially-hidden w-35-percent">
+                  <img src="assets/img/memoji-idea.png" alt="memoji-idea"
+                  class="initially-hidden memoji w-35-percent">
+                  <img src="assets/img/memoji-celebrate.PNG" alt="memoji-celebrate"
+                  class="initially-hidden memoji w-35-percent">
+                  <img src="assets/img/memoji-thinking.png" alt="memoji-thinking"
+                  class="initially-hidden memoji w-35-percent">
                 </div>
               </div>
             </div>
           </div>
-          <!-- Skills (tiles) -->
+          <!-- Skills tiles -->
         </div>
       </div>
     </div>
     <!-- 
       Projects section
      -->
-    <div class="section container-fluid d-flex flex-column align-items-center justify-content-center bg-off-white2" id="projects">
+    <div id="projects"
+    class="section container-fluid bg-off-white2 d-flex flex-column align-items-center justify-content-center">
       <div class="section-inner-container">
+        <!-- Section heading -->
         <div class="p-4 p-md-5 pd-tb-1-5-rem pd-b-2-2-5-rem">
-          <h2 style="color: #f63e54;">Projects</h2>
-          <a href="https://github.com/therealFoxster" id="open-github" class="fs-6 link-primary fw-normal" role="button" style="display: block; width: fit-content;">
-            <span class="link-text">View GitHub profile</span>
+          <h2 style="color: var(--my-red)">
+            Projects
+          </h2>
+          <a href="https://github.com/therealFoxster"
+          id="open-github" class="link-primary fs-6 fw-normal"
+          role="button" style="display: block; width: fit-content;">
+            <span class="link-text">
+              View GitHub profile
+            </span>
             <i class="bi bi-chevron-right"></i>
           </a>
         </div>
-        <div class="row row-cols-1 g-3 g-md-4">
-          <!-- Projects (tiles) -->
-        </div>
+        <!-- Projects tiles -->
+        <div class="row row-cols-1 g-3 g-md-4"></div>
       </div>
     </div> <!-- End project section -->
     <!-- 
       Contact section
      -->
-    <div class="section container-fluid bg-off-white2" id="contact">
+    <div id="contact" class="section container-fluid bg-off-white2">
       <div class="section-inner-container">
-        <h2 class="p-4 p-md-5 pd-tb-1-5-rem" style="color: #8876fe;">Contact</h2>
+        <!-- Section heading -->
+        <h2 class="p-4 p-md-5 pd-tb-1-5-rem"style="color: var(--my-purple);">
+          Contact
+        </h2>
+        <!-- Tiles -->
         <div class="row row-cols-1 g-3 g-md-4">
+          <!-- Get in touch tile -->
           <div class="col-md-6 col-lg-6">
-            <div class="tile p-4-5 p-md-5 rounded-5 h-100 d-flex flex-column justify-content-between mobile-min-height-600px" style="background: linear-gradient(#8876fe 20%, #9f91fe 60%);">
+            <div class="tile rounded-5 d-flex flex-column justify-content-between p-4-5 p-md-5 h-100 mobile-min-height-600px"
+            style="background: linear-gradient(var(--my-purple) 20%, var(--my-light-purple) 60%);">
               <!-- Heading -->
-              <h5 class="text-white">Get in touch</h5>
+              <h5 class="text-white">
+                Get in touch
+              </h5>
               <!-- Content -->
-              <div class="tile-content h-100 d-flex flex-column justify-content-center text-white">
-                <div class="mb-2 mb-md-3 p-md-3 p-lg-5 text-white">
+              <div class="tile-content text-white d-flex flex-column justify-content-center h-100">
+                <div class="text-white mb-2 mb-md-3 p-md-3 p-lg-5">
                   <div id="send-icon" class="initially-hidden mb-2 mb-md-3">
                     <i class="bi bi-send" style="font-size: 5em;"></i>
                   </div>
-                  <h2>Leave a message and I'll get back to you ASAP.</h2>
+                  <h2>
+                    Leave a message and I'll get back to you ASAP.
+                  </h2>
                 </div>
               </div>
               <!-- Overlay -->
-              <div class="tile-overlay p-1 p-md-3 p-lg-5 fs-6 rounded-5 lh-md fw-kinda-bold initially-hidden d-none">
-                <div class="d-flex flex-column align-items-center justify-content-center h-100 w-100 text-white" style="margin: 0 auto;">
-                  <form action="https://formspree.io/f/mlezvpqp" method="POST" id="form" class="w-100">
-                    <div class="container w-100" id="messageForm">
+              <div class="initially-hidden tile-overlay rounded-5 d-none fw-kinda-bold fs-6 lh-md p-1 p-md-3 p-lg-5">
+                <div class="text-white d-flex flex-column align-items-center justify-content-center h-100 w-100"
+                style="margin: 0 auto;">
+                  <form action="https://formspree.io/f/mlezvpqp" method="POST"
+                  id="form" class="w-100">
+                    <div id="messageForm" class="container w-100">
                       <div class="container-fluid w-100">
                         <div class="mb-3">
-                          <label for="name" class="form-label text-white fw-kinda-bold required">Name</label>
-                          <input type="text" name="name" class="form-control" id="name" required>
+                          <label for="name"  class="required form-label text-white fw-kinda-bold">
+                            Name
+                          </label>
+                          <input type="text" name="name" required
+                          id="name" class="form-control">
                         </div>
                         <div class="mb-3">
-                          <label for="email" class="form-label text-white fw-kinda-bold required">Email</label>
-                          <input type="email" name="email" class="form-control" id="email" required>
+                          <label for="email" class="required form-label text-white fw-kinda-bold">
+                            Email
+                          </label>
+                          <input type="email" name="email" required
+                          id="email" class="form-control">
                         </div>
                         <div class="mb-3">
-                          <label for="message" class="form-label text-white fw-kinda-bold required">Message</label>
-                          <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
+                          <label for="message" class="required form-label text-white fw-kinda-bold">
+                            Message
+                          </label>
+                          <textarea name="message" rows="3" required
+                          id="message" class="form-control"></textarea>
                         </div>
                         <div class="text-end">
-                          <button class="btn btn-primary fw-kinda-bold shadow1 w-100" type="submit">Continue</button>
+                          <button type="submit"
+                          class="btn btn-primary fw-kinda-bold shadow1 w-100">
+                            Continue
+                          </button>
                         </div>
                       </div>
-                      <div class="container pt-4 d-flex align-items-end justify-content-center">
-                        <h6 class="text-white" style="margin-right: 12px;">Powered by</h6>
-                        <a href="https://formspree.io" target="_blank" class="shadow1" id="formspree-logo">
+                      <div class="container d-flex align-items-end justify-content-center pt-4">
+                        <h6 class="text-white" style="margin-right: 12px;">
+                          Powered by
+                        </h6>
+                        <a href="https://formspree.io" target="_blank"
+                        id="formspree-logo" class="shadow1">
                           <img src="assets/img/logo-formspree.svg" alt="formspree-logo">
                         </a>
                       </div>
@@ -232,13 +304,14 @@
                 </div>
               </div>
               <!-- Overlay background -->
-              <span class="tile-overlay-background rounded-5" style="background-color: #8876fe !important;"></span>
+              <span class="tile-overlay-background rounded-5"
+              style="background-color: var(--my-purple) !important;"></span>
               <!-- Plus go x button -->
               <div class="plus-go-x-container">
                 <label class="plus-go-x fill-white">
                   <input type="checkbox" onChange="contactPlusGoXHandler(event);">
                   <div class="p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill" width="16" height="16" viewBox="0 0 16 16">
                       <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                     </svg>
                   </div>
@@ -247,15 +320,16 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-6">
-            <div class="tile bg-white p-4-5 p-md-5 rounded-5 h-100 d-flex flex-column justify-content-between mobile-min-height-600px">
+            <div class="tile bg-white rounded-5 d-flex flex-column justify-content-between p-4-5 p-md-5 h-100 mobile-min-height-600px">
               <!-- Heading -->
-              <h5 style="color: #8876fe;">Platforms</h5>
-              <div class="tile-content h-100 d-flex flex-column fw-kinda-bold lh-md justify-content-between">
+              <h5 style="color: var(--my-purple)">Platforms</h5>
+              <div class="tile-content d-flex flex-column justify-content-between fw-kinda-bold lh-md h-100">
                 <p>Discover my presence across the digital landscape.</p>
-                <!-- inks -->
+                <!-- Social links -->
                 <div style="margin: 0 auto;" id="socials-container"></div>
-                <!-- Blank div to push socials-container to middle of flex container -->
-                <div></div>
+                <div>
+                  <!-- Blank div to push socials-container to middle of flex container -->
+                </div>
               </div>
             </div>
           </div>
@@ -265,11 +339,16 @@
     <!-- 
       Resume
      -->
-    <div class="section bg-off-white2 p-4 text-center" id="resume">
+    <div id="resume" class="section bg-off-white2 text-center p-4">
       <div class="d-flex flex-column align-items-center p-lg-5">
-        <h2 class="text-light mb-3" style="max-width: 700px;">Learn more about my background and expertise.</h2>
-        <a id="request-resume" class="fs-6 link-primary fw-normal" role="button" onclick="requestResume();">
-          <span class="link-text">Request resume</span>
+        <h2 class="text-light mb-3" style="max-width: 700px;">
+          Learn more about my background and expertise.
+        </h2>
+        <a onclick="requestResume();" role="button"
+        id="request-resume" class="fs-6 link-primary fw-normal">
+          <span class="link-text">
+            Request resume
+          </span>
           <i class="bi bi-arrow-up-right-square ms-1" style="vertical-align: top;"></i>
         </a>
       </div>
@@ -277,27 +356,36 @@
     <!-- 
       Source code
      -->
-    <div class="section container-fluid bg-off-white2 pb-4" id="source-code">
+    <div id="source-code" class="section container-fluid bg-off-white2 pb-4">
       <div class="section-inner-container">
         <div class="row row-cols-1 g-3 g-md-4">
           <div class="col">
-            <div class="tile bg-white rounded-5 d-flex flex-column" style="min-height: unset !important; background: linear-gradient(15deg,#1f1c2a,#34557a);"> 
-              <!-- Content  p-4-5 p-md-5 p-lg-5 -->
+            <div class="tile bg-white rounded-5 d-flex flex-column"
+            style="min-height: unset !important;
+            background: linear-gradient(15deg, var(--my-blueish-grey), var(--my-light-blueish-grey));"> 
+              <!-- Content -->
               <div class="tile-content row row-cols-1" style="height: 75vh">
                 <!-- Text -->
-                <div class="col col-md-5 p-5 d-flex flex-row align-items-center ">
-                  <div class="px-3 ps-lg-5 text-center text-sm-start">
-                    <h2 class="text-white mb-3">Discover how this portfolio was built.</h2>
-                    <a href="https://github.com/therealFoxster/portfolio" id="open-github" class="fs-6 link-light fw-normal" role="button">
-                      <span class="link-text">View source code</span>
+                <div class="col col-md-5 d-flex flex-row align-items-center p-5">
+                  <div class="text-center text-sm-start px-3 ps-lg-5">
+                    <h2 class="text-white mb-3">
+                      Discover how this portfolio was built.
+                    </h2>
+                    <a href="https://github.com/therealFoxster/portfolio" role="button"
+                    id="open-github" class="fs-6 link-light fw-normal">
+                      <span class="link-text">
+                        View source code
+                      </span>
                       <i class="bi bi-chevron-right"></i>
                     </a>
                   </div>
                 </div>
-                <!-- Image margin-top: -9vh !important;  -->
-                <div class="col col-md-7 d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
-                  style="z-index: -1;">
-                  <img src="assets/img/macbook-code+portfolio.png" alt="portfolio+code" class="device macbook ms-5 ms-lg-0">
+                <!-- Image -->
+                <div class="col col-md-7
+                d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
+                style="z-index: -1;">
+                  <img src="assets/img/macbook-code+portfolio.png" alt="portfolio+code"
+                  class="device macbook ms-5 ms-lg-0">
                 </div>
               </div>
             </div>
@@ -310,34 +398,27 @@
      -->
     <footer>
       <div style="max-width: 100vw; overflow: hidden;">
-        <div class="row pd-lr-4 bg-white pt-1 pb-1">
+        <div class="row bg-white pd-lr-4 pt-1 pb-1">
           <!-- Copyright text -->
-          <div class="col-sm-8 d-flex align-items-center foot-div">
-            <p class="text-matte-light fw-normal text-center fs-14px p-2 " 
-            style="margin-bottom: 0px;">Copyright &copy;
-              <script>
-                const originalYear = 2022;
-                let thisYear = new Date().getFullYear();
-                if (thisYear != originalYear)
-                  thisYear = `${originalYear} - ${thisYear}`;
-                document.write(thisYear);
-              </script>
-              <span class="text-light">Huy Bui</span>.
-              All rights reserved.
+          <div class="foot-div col-sm-8 d-flex align-items-center">
+            <p class="text-matte-light text-center fw-normal fs-14px p-2 " 
+            style="margin-bottom: 0px;">
+              Copyright &copy; <script>document.write(`2022 - ${new Date().getFullYear()}`);</script> <span class="text-light">Huy Bui</span>. All rights reserved.
             </p>
           </div> <!-- End copyright text -->
           <!-- Appearance toggle -->
-          <div class="col-sm d-flex align-items-start foot-div p-2" id="appearance-toggle-container" style="justify-content: flex-end">
+          <div id="appearance-toggle-container" class="foot-div col-sm d-flex align-items-start p-2" 
+          style="justify-content: flex-end">
             <div id="appearance-toggle">
               <ul class="nav nav-pills fs-14px">
                 <li class="nav-item">
-                  <a class="nav-link" id="light-appearance">Light</a>
+                  <a id="light-appearance" class="nav-link">Light</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="dark-appearance">Dark</a>
+                  <a id="dark-appearance" class="nav-link">Dark</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="auto-appearance">Auto</a>
+                  <a id="auto-appearance" class="nav-link">Auto</a>
                 </li>
               </ul>
             </div> <!-- End #appearance-toggle -->
