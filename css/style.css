@@ -21,6 +21,14 @@
   --nav-background: rgba(240, 240, 240, 0.9);
   --nav-background-dark: rgb(55, 55, 55, 0.9);
   --sm-nav-height: calc(1rem + 38px);
+    
+  --my-blue: #027fff;
+  --my-orange: #e66702;
+  --my-red: #f63e54;
+  --my-purple: #8876fe;
+  --my-light-purple: #9f91fe;
+  --my-blueish-grey: #1f1c2a;
+  --my-light-blueish-grey: #34557a;
 }
 
 /* Pointer cursor */
