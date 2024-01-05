@@ -196,6 +196,10 @@
 }
 
 /* Images */
+img.pfp {
+  border-radius: 50%;
+  width: 1.5em;
+}
 img.device {
   filter: drop-shadow(10px 15px 15px rgb(0, 0, 0, 0.35));
   height: 575px;
@@ -386,6 +390,13 @@ a[class*="link-"]:hover {
   }
   a.social-link:hover {
     scale: 1.15;
+  }
+  #navbar .navbar-brand {
+    opacity: 0.9;
+    transition: opacity 0.25s ease;
+  }
+  #navbar .navbar-brand:hover {
+    opacity: 1;
   }
 }
 @media (hover: none) {
