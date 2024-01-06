@@ -37,10 +37,10 @@ fetchJSON("assets/data.json").then(data => {
     data.projects.list.forEach(project => {
         let customCoverDescriptionHTML = `
         <!-- URL -->
-        <a target="_blank" href="${project.custom_url
-            ?? "https://github.com/" + data.github_username + "/" + project.heading}"
-            class="fs-6 link-primary d-block" role="button"
-            style="margin-top: 4px; margin-bottom: 10px; width: fit-content;">
+        <a target="_blank" href="${project.custom_url ??
+        "https://github.com/" + data.github_username + "/" + project.heading}"
+        class="fs-6 link-primary d-block" role="button"
+        style="margin-top: 4px; margin-bottom: 10px; width: fit-content;">
             <span class="link-text fw-normal">
                 ${project.custom_url_text ?? "View on GitHub"}
             </span>
@@ -86,9 +86,9 @@ fetchJSON("assets/data.json").then(data => {
         const username = item.username_prefix ? `${item.username_prefix}${item.username}` : item.username;
         $("#contact #socials-container").insertAdjacentHTML("beforeend", `
             <a href="https://www.${item.platform}.com/${username}" target="_blank"
-                class="social-link text-light d-flex flex-row align-items-center m-1">
+            class="social-link text-light d-flex flex-row align-items-center m-1">
                 <img src="assets/img/app-icon-${item.platform}.png" alt="${item.platform}-icon"
-                    class="app-icon m-2">
+                class="app-icon m-2">
                 ${item.username_prefix ? username : "@" + item.username}
             </a>
         `);
