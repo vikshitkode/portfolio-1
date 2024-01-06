@@ -10,8 +10,8 @@ export const Tile = (item, primaryColor, primaryColorMuted, customCoverDescripti
 let html = `
 <div class="col col-md-${item.md_size ?? "12"} col-lg-${item.lg_size ?? item.md_size ?? "12"}">
     <div class="tile bg-white p-4-5 p-md-5 rounded-5 h-100 d-flex flex-column justify-content-between"`;
-        if (!item.img && primaryColor) html += ` 
-        style="background: linear-gradient(145deg, ${primaryColor} 20%, ${primaryColorMuted ?? primaryColor} 60%);"`; html += `>`; html += `
+    if (!item.img && primaryColor) html += ` 
+    style="background: linear-gradient(145deg, ${primaryColor} 20%, ${primaryColorMuted ?? primaryColor} 60%);"`; html += `>`; html += `
         <h5 ${item.img ? "style='color: " + primaryColor + ";'" : "class='text-white'"}>
             ${item.heading}
         </h5>`; html += `
