@@ -110,7 +110,7 @@ async function fetchJSON(url) {
     return json;
 }
 
-function requestResume() {
+window.requestResume = function() {
     $("#contact").scrollIntoView(scrollIntoViewOptions);
     const checkbox = $("#contact .plus-go-x>input");
     const message = $("#contact #message");
