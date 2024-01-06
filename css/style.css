@@ -326,10 +326,9 @@ img.window {
   padding-top: calc(var(--sm-nav-height) + 3rem) !important;
   height: 100vh;
 }
-#greeting p:first-of-type::after {
-  /* animation: loading 3.75s infinite; */
-  /* content: "..."; */
-}
+/* #greeting p:first-of-type::after {
+  animation: loading 3.75s infinite;
+} */
 
 /* Contact section */
 .app-icon {
@@ -748,9 +747,9 @@ i.bi.bi-chevron-right, i.bi.bi-chevron-down {
     to { transform: translate(0px, 0px); opacity: 1; }
 }
 
-#navbar .navbar-brand::after {
-  /* animation: navbar-brand 10s infinite; */
-}
+/* #navbar .navbar-brand::after {
+  animation: navbar-brand 10s infinite;
+} */
 @keyframes navbar-brand {
   0% { content: ""; }
   1% { content: "H"; }

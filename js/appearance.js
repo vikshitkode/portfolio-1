@@ -6,101 +6,101 @@
 //  Copyright (c) 2022 Foxster. All rights reserved.
 //
 
-const navigationBar = document.getElementById("navbar");
-const navigationBarTogglerBreadCrusts = document.querySelectorAll("#navbar .navbar-toggler-bread-crust");
-const blurBackgroundElements = document.querySelectorAll(".bg-blur");
-const lightOutlineButtons = document.querySelectorAll(".btn-outline-light"); // View resume button
-const matteLightTexts = document.querySelectorAll(".text-matte-light");
-const sections = document.querySelectorAll(".section");
-const miscelllaneousElements = document.querySelectorAll("#main-container, body, footer");
-let lightTexts, whiteBackgroundElements, offWhiteBackgroundElements, appIcons; // Programmatically added elements
+import { $, $$ } from "./lib.js";
+
+const navBar = $("#navbar");
+const navBarTogglerBreadCrusts = $$("#navbar .navbar-toggler-bread-crust");
+const blurBackgroundElements = $$(".bg-blur");
+const lightOutlineButtons = $$(".btn-outline-light");
+const matteLightTexts = $$(".text-matte-light");
+const miscelllaneousElements = $$("#main-container, body, footer");
+
 // Toggles
-const lightAppearanceToggle = document.getElementById("light-appearance");
-const darkAppearanceToggle = document.getElementById("dark-appearance");
-const autoAppearanceToggle = document.getElementById("auto-appearance");
+$("#light-appearance").addEventListener("click", () => setPreferredAppearance("light"));
+$("#dark-appearance").addEventListener("click", () => setPreferredAppearance("dark"));
+$("#auto-appearance").addEventListener("click", () => setPreferredAppearance("auto"));
 
-lightAppearanceToggle.addEventListener("click", () => setPreferredAppearance("light"));
-darkAppearanceToggle.addEventListener("click", () => setPreferredAppearance("dark"));
-autoAppearanceToggle.addEventListener("click", () => setPreferredAppearance("auto"));
-
-function getPreferredAppearance() {
-    return window.localStorage.getItem("appearance");
+NodeList.prototype.setBackgroundColor = function(s) {
+    this.forEach(element => element.style.backgroundColor = s);
+}
+NodeList.prototype.addClass = function(c) {
+    this.forEach(element => element.classList.add(c));
+}
+NodeList.prototype.removeClass = function(c) {
+    this.forEach(element => element.classList.remove(c));
 }
 
-function setPreferredAppearance(appearance) {
-    switch (appearance.toLowerCase()) {
-    case "light":
-        toggleLightAppearance();
-        break;
-    case "dark":
-        toggleDarkAppearance();
-        break;
-    case "auto":
-        toggleAutoAppearance();
-        break;
-    default: return;
-    }
+const lightAppearance = () => {
+    navBar.classList.remove("navbar-dark");
+    navBarTogglerBreadCrusts.setBackgroundColor("var(--dark-bg-color)");
+    blurBackgroundElements.setBackgroundColor("var(--nav-background)");
+    lightOutlineButtons.removeClass("btn-outline-light");
+    lightOutlineButtons.addClass("btn-outline-primary");
+    matteLightTexts.addClass("text-matte-dark");
+    miscelllaneousElements.setBackgroundColor("var(--light-bg-color)");
+    
+    $$(".text-light").addClass("text-dark");
+    $$(".bg-white").removeClass("bg-off-black");
+    $$(".bg-off-white, .bg-off-white2").removeClass("bg-black");
+    $$(".app-icon").removeClass("dark");
+};
 
-    // Set active appearance toggle
-    document.querySelectorAll('#appearance-toggle .nav li a.active')
-        .forEach(toggle => toggle.classList.remove("active"));
-    document.getElementById(`${appearance.toLowerCase()}-appearance`).classList.add('active');
+const darkAppearance = () => {
+    navBar.classList.add("navbar-dark");
+    navBarTogglerBreadCrusts.setBackgroundColor("var(--light-bg-color)");
+    blurBackgroundElements.setBackgroundColor("var(--nav-background-dark)");
+    lightOutlineButtons.removeClass("btn-outline-primary");
+    lightOutlineButtons.addClass("btn-outline-light");
+    matteLightTexts.removeClass("text-matte-dark");
+    miscelllaneousElements.setBackgroundColor("var(--dark-bg-color)");
+    
+    $$(".text-light").removeClass("text-dark");
+    $$(".bg-white").addClass("bg-off-black");
+    $$(".bg-off-white, .bg-off-white2").addClass("bg-black");
+    $$(".app-icon").addClass("dark");
+};
 
-    window.localStorage.setItem("appearance", appearance.toLowerCase());
-}
-
-function toggleLightAppearance() {
-    navigationBar.classList.remove("navbar-dark");
-    navigationBarTogglerBreadCrusts.forEach(crust => crust.style.backgroundColor = "var(--dark-bg-color)");
-    blurBackgroundElements.forEach(background => background.style.backgroundColor = "var(--nav-background)");
-    lightOutlineButtons.forEach(btn => {
-        btn.classList.add("btn-outline-primary");
-        btn.classList.remove("btn-outline-light");
-    });
-    matteLightTexts.forEach(text => text.classList.add("text-matte-dark"));
-    sections.forEach(section => section.style.borderColor = "var(--light-bg-color)")
-    miscelllaneousElements.forEach(element => element.style.backgroundColor = "var(--light-bg-color)");
-    lightTexts.forEach(text => text.classList.add("text-dark"));
-    whiteBackgroundElements.forEach(element => element.classList.remove("bg-off-black"));
-    offWhiteBackgroundElements.forEach(element => element.classList.remove("bg-black"));
-    appIcons.forEach(element => element.classList.remove("dark"));
-}
-
-function toggleDarkAppearance() {
-    navigationBar.classList.add("navbar-dark");
-    navigationBarTogglerBreadCrusts.forEach(crust => crust.style.backgroundColor = "var(--light-bg-color)");
-    blurBackgroundElements.forEach(background => background.style.backgroundColor = "var(--nav-background-dark)");
-    lightOutlineButtons.forEach(btn => {
-        btn.classList.remove("btn-outline-primary");
-        btn.classList.add("btn-outline-light");
-    });
-    matteLightTexts.forEach(text => text.classList.remove("text-matte-dark"));
-    sections.forEach(section => section.style.borderColor = "black")
-    miscelllaneousElements.forEach(element => element.style.backgroundColor = "var(--dark-bg-color)");
-    lightTexts.forEach(text => text.classList.remove("text-dark"));
-    whiteBackgroundElements.forEach(element => element.classList.add("bg-off-black"));
-    offWhiteBackgroundElements.forEach(element => element.classList.add("bg-black"));
-    appIcons.forEach(element => element.classList.add("dark"));
-}
-
-function toggleAutoAppearance() {
+const autoAppearance = () => {
     const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)");
     // System appearance change listener (for "auto" only)
     darkModeEnabled.addEventListener("change", event => {
         if (getPreferredAppearance() == "auto")
-            event.matches ? toggleDarkAppearance() : toggleLightAppearance()
+            event.matches ? darkAppearance() : lightAppearance()
     });
     // Set page appearance (one-time)
-    darkModeEnabled.matches ? toggleDarkAppearance() : toggleLightAppearance()
+    darkModeEnabled.matches ? darkAppearance() : lightAppearance();
 }
 
-function refreshAppearanceForProgrammaticallyAddedElements() {
-    const appearance = getPreferredAppearance() ?? "auto";
-    lightTexts = document.querySelectorAll(".text-light");
-    offWhiteBackgroundElements = document.querySelectorAll(".bg-off-white, .bg-off-white2");
-    whiteBackgroundElements = document.querySelectorAll(".bg-white");
-    appIcons = document.querySelectorAll(".app-icon")
-    setPreferredAppearance(appearance);
+function getPreferredAppearance() {
+    return window.localStorage.getItem("appearance") ?? "auto";
 }
 
-refreshAppearanceForProgrammaticallyAddedElements();
+function setPreferredAppearance(appearance) {
+    const preferredAppearance = appearance.toLowerCase();
+    
+    switch (preferredAppearance) {
+    case "light":
+        lightAppearance();
+        break;
+    case "dark":
+        darkAppearance();
+        break;
+    case "auto":
+    default:
+        autoAppearance();
+        break;
+    }
+
+    // Set active appearance toggle
+    $$('#appearance-toggle .nav li a.active').removeClass("active");
+    $(`#${preferredAppearance}-appearance`).classList.add('active');
+
+    // Save preference to local storage
+    window.localStorage.setItem("appearance", preferredAppearance);
+}
+
+export function refreshAppearance() {
+    setPreferredAppearance(getPreferredAppearance());
+}
+
+refreshAppearance();
