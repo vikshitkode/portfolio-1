@@ -111,6 +111,11 @@ window.plusGoXHandler = function(event) {
     const checkbox = event.target;
     const label = checkbox.parentElement;
     const icon = label.querySelector("div");
+    
+    if (icon.classList.contains("animating"))
+        return;
+    icon.classList.add("animating");
+    
     const container = label.parentElement;
     const tile = container.parentElement;
     const tileTitle = tile.querySelector("h5");
@@ -118,10 +123,7 @@ window.plusGoXHandler = function(event) {
     const tileOverlay = tile.querySelector(".tile-overlay");
     const tileOverlayBackground = tile.querySelector(".tile-overlay-background");
 
-    if (icon.classList.contains("animating")) return;
-
     if (checkbox.checked) {
-        icon.classList.add("animating");
         // Turn "+" into "x"
         icon.style.animation = `make_x 0.65s ${easingFunction} both 0.15s`;
         // Hide cover elements
@@ -129,35 +131,38 @@ window.plusGoXHandler = function(event) {
             element.style.animation = "fade_out 0.45s both 0.25s";
         });
         setTimeout(() => {
-            label.classList.add("checked");
-            // Show content background
-            tileOverlayBackground.style.animation = "fade_in 0.75s both";
             // Make title white
             tileTitle.classList.add("text-white-animated");
-            // Show content
+            // Show overlay
+            tileOverlay.classList.add("text-white-animated");
             tileOverlay.classList.remove("d-none");
             tileOverlay.style.animation = "slide_in_down 0.5s both";
-            tileOverlay.classList.add("text-white-animated");
+            // Show overlay background
+            tileOverlayBackground.style.animation = "fade_in 0.75s both";
+            // Check
+            label.classList.add("checked");
+            // Animation finished
             icon.classList.remove("animating");
         }, 800);
     } else {
-        icon.classList.add("animating");
         // Turn "x" into "+"
         icon.style.animation = `make_plus 0.65s ${easingFunction} both 0.15s`
-        // Hide description text
+        // Hide overlay
         tileOverlay.style.animation = "slide_out_up 0.5s both"
         setTimeout(() => {
+            tileOverlay.classList.add("d-none");
+            tileOverlay.classList.remove("text-white-animated");
             // Hide overlay background
             tileOverlayBackground.style.animation = "fade_out 0.45s both 0.25s";
             // Show cover elements
             tileContent.forEach(coverElement => {
                 coverElement.style.animation = "fade_in 0.45s both 0.25s";
             });
-            tileOverlay.classList.remove("text-white-animated");
-            tileOverlay.classList.add("d-none");
             setTimeout(() => {
                 tileTitle.classList.remove("text-white-animated");
+                // Uncheck
                 label.classList.remove("checked");
+                // Animation finished
                 icon.classList.remove("animating");
             }, 250);
         }, 500);
@@ -165,13 +170,10 @@ window.plusGoXHandler = function(event) {
 }
 
 window.contactPlusGoXHandler = function(event) {
-    if (event.target.checked) {
+    plusGoXHandler(event);
+    if (event.target.checked)
         sendIcon.style.animation = "slide_out_diag_up 0.75s both 0.25s";
-        plusGoXHandler(event);
-    } else {
-        plusGoXHandler(event);
-        setTimeout(() => 
-            sendIcon.style.animation = "slide_diag_up 0.75s both 0s", 750
-        );
-    }
+    else setTimeout(() => 
+        sendIcon.style.animation = "slide_diag_up 0.75s both 0s", 750
+    );
 }
