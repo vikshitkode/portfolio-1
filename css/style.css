@@ -457,6 +457,7 @@ h2 { font-size: 2rem; }
 /* md breakpoint */
 @media (min-width: 768px) {
   .p-md-5 { padding: 2.5rem !important; }
+  p.fs-5.text-white.initially-hidden { font-size: 1.75rem!important; }
 }
 
 /* Margin */
