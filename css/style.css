@@ -841,3 +841,19 @@ i.bi.bi-chevron-right, i.bi.bi-chevron-down {
   99% { content: "th"; }
   100% { content: "t"; }
 }
+
+#learn-more i.bi-chevron-down {
+  display: inline-block;
+  animation: point-down 1s infinite;
+}
+
+@keyframes point-down {
+  0% { transform: translateY(-2px); }
+  50% { transform: translateY(2px); }
+  100% { transform: translateY(-2px); }
+}
+@-webkit-keyframes point-down {
+  0% { -webkit-transform: translateY(-2px); }
+  50% { -webkit-transform: translateY(2px); }
+  100% { -webkit-transform: translateY(-2px); }
+}
