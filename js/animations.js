@@ -37,7 +37,7 @@ addIntersectionObserverFor(greetingSection, (entries, observer) => {
         $("#learn-more").style.animation = "slide_in_down 1s both 1.25s";
     } else {
         $$("#greeting .initially-hidden").forEach(element => 
-            element.style.animation = null
+            element.style.animation = "fade_out 0.5s both"
         );
     }
 });
