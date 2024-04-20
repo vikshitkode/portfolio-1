@@ -49,7 +49,7 @@ fetchJSON("assets/data.json").then(data => {
         <!-- Topics -->
         <p>`; 
         // Grab project topics from data.json
-        project.topics.forEach(topic => customCoverDescriptionHTML += `
+        project.topics?.forEach(topic => customCoverDescriptionHTML += `
             <span class="topic-badge m-1" style="color:${data.projects.color}; border-color: ${data.projects.color};">
                 ${topic}
             </span>`); customCoverDescriptionHTML += `
