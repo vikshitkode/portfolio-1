@@ -65,7 +65,7 @@
 *****************/
 
 .tile {
-  min-height: 525px !important;
+  min-height: 576px !important;
   overflow: hidden;
   position: relative;
 }
