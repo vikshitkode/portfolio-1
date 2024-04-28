@@ -7,6 +7,7 @@
  -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +20,22 @@
   <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body style="overflow-x: hidden;">
   <!-- 
     Nav bar
    -->
   <nav id="navbar" class="navbar navbar-expand-sm navbar-dark fixed-top bg-blur">
     <div class="container-sm d-flex flex-row justify-content-between">
-      <a id="title" class="navbar-brand fw-kinda-bold px-2 d-flex flex-row align-items-center gap-2" 
-      data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+      <a id="title" class="navbar-brand fw-kinda-bold px-2 d-flex flex-row align-items-center gap-2"
+        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
         <img src="assets/img/pfp.jpeg" alt="pfp" class="pfp app-icon">
         portfolio
       </a>
       <!-- Nav bar toggler (mobile) -->
-      <button id="navbar-toggler" class="navbar-toggler" type="button" 
-      data-bs-toggle="collapse" data-bs-target="#navbar-content" 
-      aria-controls="navbar-content" aria-expanded="false" aria-label="Navigation toggler">
+      <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+        aria-label="Navigation toggler">
         <div class="navbar-toggler-icon-wrapper">
           <span class="navbar-toggler-bread top">
             <span class="navbar-toggler-bread-crust top"></span>
@@ -48,26 +50,26 @@
         <!-- Links -->
         <ul class="navbar-nav navbar-nav-scroll me-auto mb-2 mb-sm-0">
           <li class="nav-item mx-md-1">
-            <a href="#intro" class="nav-link goto-intro"
-            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a href="#intro" class="nav-link goto-intro" data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show">
               Introduction
             </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a href="#skills" class="nav-link goto-skills"
-            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a href="#skills" class="nav-link goto-skills" data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show">
               Skills
             </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a href="#projects" class="nav-link goto-projects"
-            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a href="#projects" class="nav-link goto-projects" data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show">
               Projects
             </a>
           </li>
           <li class="nav-item mx-md-1">
-            <a href="#contact" class="nav-link goto-contact"
-            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a href="#contact" class="nav-link goto-contact" data-bs-toggle="collapse"
+              data-bs-target=".navbar-collapse.show">
               Say hello
             </a>
           </li>
@@ -76,17 +78,7 @@
               GitHub
             </a>
           </li>
-          <!-- <li class="nav-item mx-md-1">
-            <a href="#resume" class="nav-link goto-resume"
-            data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-              Learn more
-            </a>
-          </li> -->
         </ul>
-        <!-- View resume button -->
-        <!-- <button id="resume" class="btn btn-outline-light btn-sm text-uppercase fw-kinda-bold" onclick="viewResume();">
-          Request Resume
-        </button> -->
       </div>
     </div>
   </nav>
@@ -100,8 +92,7 @@
     <div id="greeting" class="container-fluid d-flex flex-column justify-content-center p-5 pd-lr-3">
       <div>
         <div class="memoji-container text-center">
-          <img src="assets/img/memoji-phone.png" alt="memoji-phone"
-          class="initially-hidden memoji">
+          <img src="assets/img/memoji-phone.png" alt="memoji-phone" class="initially-hidden memoji">
         </div>
         <h1 class="initially-hidden text-white text-center display-1 fw-kinda-bold"></h1>
         <p class="initially-hidden text-white text-center fs-5 fw-light"></p>
@@ -121,7 +112,7 @@
         <div class="row row-cols-1 g-3 g-md-4">
           <div class="col">
             <div class="tile bg-white rounded-5 d-flex flex-column p-4-5 p-md-5 h-100"
-            style="min-height: unset !important;">
+              style="min-height: unset !important;">
               <!-- Heading -->
               <h5 style="color: var(--my-blue);">
                 A little bit about myself
@@ -134,16 +125,15 @@
                 </div>
                 <!-- Image -->
                 <div class="col col-md-6 d-flex align-items-center text-center m-0"
-                style="margin-top: -9vh !important; margin-bottom: 0 !important;">
-                  <img src="assets/img/memoji-laptop.png" alt="memoji-laptop"
-                  class="memoji-container w-100 m-0">
+                  style="margin-top: -9vh !important; margin-bottom: 0 !important;">
+                  <img src="assets/img/memoji-laptop.png" alt="memoji-laptop" class="memoji-container w-100 m-0">
                 </div>
               </div>
               <!-- Overlay -->
               <div class="initially-hidden tile-overlay rounded-5 d-none fw-kinda-bold lh-md p-4-5 p-md-5 fs-6">
                 <!-- Detail text -->
-                <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100" 
-                style="margin: 0 auto;">
+                <div class="d-flex flex-column align-items-center justify-content-center text-white h-100 w-100"
+                  style="margin: 0 auto;">
                   <p></p>
                 </div>
               </div>
@@ -154,9 +144,10 @@
                 <label class="plus-go-x">
                   <input type="checkbox" onChange="plusGoXHandler(event);">
                   <div class="p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill"
-                    width="16" height="16" viewBox="0 0 16 16">
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill" width="16" height="16"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                     </svg>
                   </div>
                 </label>
@@ -179,7 +170,8 @@
         <div class="row row-cols-1 g-3 g-md-4">
           <!-- Overview tile -->
           <div class="col">
-            <div class="tile bg-white rounded-5 d-flex flex-column p-4-5 p-md-5 h-100" style="min-height: unset!important;">
+            <div class="tile bg-white rounded-5 d-flex flex-column p-4-5 p-md-5 h-100"
+              style="min-height: unset!important;">
               <!-- Heading -->
               <h5 style="color: var(--my-orange);">
                 Overview
@@ -190,12 +182,11 @@
                 <p></p>
                 <!-- Images -->
                 <div class="memoji-container text-center">
-                  <img src="assets/img/memoji-idea.png" alt="memoji-idea"
-                  class="initially-hidden memoji w-35-percent">
+                  <img src="assets/img/memoji-idea.png" alt="memoji-idea" class="initially-hidden memoji w-35-percent">
                   <img src="assets/img/memoji-celebrate.PNG" alt="memoji-celebrate"
-                  class="initially-hidden memoji w-35-percent">
+                    class="initially-hidden memoji w-35-percent">
                   <img src="assets/img/memoji-thinking.png" alt="memoji-thinking"
-                  class="initially-hidden memoji w-35-percent">
+                    class="initially-hidden memoji w-35-percent">
                 </div>
               </div>
             </div>
@@ -207,16 +198,16 @@
     <!-- 
       Projects section
      -->
-    <div id="projects" class="section container-fluid bg-off-white2 d-flex flex-column align-items-center justify-content-center">
+    <div id="projects"
+      class="section container-fluid bg-off-white2 d-flex flex-column align-items-center justify-content-center">
       <div class="section-inner-container">
         <!-- Section heading -->
         <div class="p-4 p-md-5 pd-tb-1-5-rem pd-b-2-2-5-rem">
           <h2 style="color: var(--my-red)">
             Projects
           </h2>
-          <a href="https://github.com/therealFoxster" target="_blank"
-          id="open-github" class="link-primary fs-6 fw-normal"
-          role="button" style="display: block; width: fit-content;">
+          <a href="https://github.com/therealFoxster" target="_blank" id="open-github"
+            class="link-primary fs-6 fw-normal" role="button" style="display: block; width: fit-content;">
             <span class="link-text">
               View GitHub profile
             </span>
@@ -230,7 +221,7 @@
               <div class="row row-cols-1 g-3 g-md-4">
                 <div class="col">
                   <div class="tile bg-white rounded-5 d-flex flex-column"
-                  style="min-height: unset !important; background: linear-gradient(15deg, var(--my-blueish-grey), var(--my-light-blueish-grey));">
+                    style="min-height: unset !important; background: linear-gradient(15deg, var(--my-blueish-grey), var(--my-light-blueish-grey));">
                     <!-- Content -->
                     <div class="tile-content row row-cols-1" style="height: 75vh">
                       <!-- Text -->
@@ -240,7 +231,7 @@
                             Discover how this portfolio was built.
                           </h2>
                           <a href="https://github.com/therealFoxster/portfolio" target="_blank" role="button"
-                          id="open-github" class="fs-6 link-light fw-normal">
+                            id="open-github" class="fs-6 link-light fw-normal">
                             <span class="link-text">
                               View on GitHub
                             </span>
@@ -249,10 +240,11 @@
                         </div>
                       </div>
                       <!-- Image -->
-                      <div class="col col-md-7 d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
-                      style="z-index: -1;">
+                      <div
+                        class="col col-md-7 d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
+                        style="z-index: -1;">
                         <img src="assets/img/macbook-code+portfolio.png" alt="portfolio+code"
-                        class="device macbook ms-5 ms-lg-0">
+                          class="device macbook ms-5 ms-lg-0">
                       </div>
                     </div>
                   </div>
@@ -269,15 +261,16 @@
     <div id="contact" class="section container-fluid bg-off-white2">
       <div class="section-inner-container">
         <!-- Section heading -->
-        <h2 class="p-4 p-md-5 pd-tb-1-5-rem"style="color: var(--my-purple);">
+        <h2 class="p-4 p-md-5 pd-tb-1-5-rem" style="color: var(--my-purple);">
           Say hello
         </h2>
         <!-- Tiles -->
         <div class="row row-cols-1 g-3 g-md-4">
           <!-- Get in touch tile -->
           <div class="col-md-6 col-lg-6">
-            <div class="tile rounded-5 d-flex flex-column justify-content-between p-4-5 p-md-5 h-100 mobile-min-height-600px"
-            style="background: linear-gradient(var(--my-purple) 20%, var(--my-light-purple) 60%);">
+            <div
+              class="tile rounded-5 d-flex flex-column justify-content-between p-4-5 p-md-5 h-100 mobile-min-height-600px"
+              style="background: linear-gradient(var(--my-purple) 20%, var(--my-light-purple) 60%);">
               <!-- Heading -->
               <h5 class="text-white">
                 Shoot me a message
@@ -296,35 +289,30 @@
               <!-- Overlay -->
               <div class="initially-hidden tile-overlay rounded-5 d-none fw-kinda-bold fs-6 lh-md p-1 p-md-3 p-lg-5">
                 <div class="text-white d-flex flex-column align-items-center justify-content-center h-100 w-100"
-                style="margin: 0 auto;">
-                  <form action="https://formspree.io/f/mlezvpqp" method="POST"
-                  id="form" class="w-100">
+                  style="margin: 0 auto;">
+                  <form action="https://formspree.io/f/mlezvpqp" method="POST" id="form" class="w-100">
                     <div id="messageForm" class="container w-100">
                       <div class="container-fluid w-100">
                         <div class="mb-3">
-                          <label for="name"  class="required form-label text-white fw-kinda-bold">
+                          <label for="name" class="required form-label text-white fw-kinda-bold">
                             Name
                           </label>
-                          <input type="text" name="name" required
-                          id="name" class="form-control">
+                          <input type="text" name="name" required id="name" class="form-control">
                         </div>
                         <div class="mb-3">
                           <label for="email" class="required form-label text-white fw-kinda-bold">
                             Email
                           </label>
-                          <input type="email" name="email" required
-                          id="email" class="form-control">
+                          <input type="email" name="email" required id="email" class="form-control">
                         </div>
                         <div class="mb-3">
                           <label for="message" class="required form-label text-white fw-kinda-bold">
                             Message
                           </label>
-                          <textarea name="message" rows="3" required
-                          id="message" class="form-control"></textarea>
+                          <textarea name="message" rows="3" required id="message" class="form-control"></textarea>
                         </div>
                         <div class="text-end">
-                          <button type="submit"
-                          class="btn btn-primary fw-kinda-bold shadow1 w-100">
+                          <button type="submit" class="btn btn-primary fw-kinda-bold shadow1 w-100">
                             Send
                           </button>
                         </div>
@@ -333,8 +321,7 @@
                         <h6 class="text-white" style="margin-right: 12px;">
                           Powered by
                         </h6>
-                        <a href="https://formspree.io" target="_blank"
-                        id="formspree-logo" class="shadow1">
+                        <a href="https://formspree.io" target="_blank" id="formspree-logo" class="shadow1">
                           <img src="assets/img/logo-formspree.svg" alt="formspree-logo">
                         </a>
                       </div>
@@ -344,14 +331,16 @@
               </div>
               <!-- Overlay background -->
               <span class="tile-overlay-background rounded-5"
-              style="background-color: var(--my-purple) !important;"></span>
+                style="background-color: var(--my-purple) !important;"></span>
               <!-- Plus go x button -->
               <div class="plus-go-x-container">
                 <label class="plus-go-x fill-white">
                   <input type="checkbox" onChange="contactPlusGoXHandler(event);">
                   <div class="p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill" width="16" height="16" viewBox="0 0 16 16">
-                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-plus-circle-fill" width="16" height="16"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
                     </svg>
                   </div>
                 </label>
@@ -359,7 +348,8 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-6">
-            <div class="tile bg-white rounded-5 d-flex flex-column justify-content-between p-4-5 p-md-5 h-100 mobile-min-height-600px">
+            <div
+              class="tile bg-white rounded-5 d-flex flex-column justify-content-between p-4-5 p-md-5 h-100 mobile-min-height-600px">
               <!-- Heading -->
               <h5 style="color: var(--my-purple)">Connect with me</h5>
               <div class="tile-content d-flex flex-column justify-content-between fw-kinda-bold lh-md h-100">
@@ -376,23 +366,6 @@
       </div>
     </div>
     <!-- 
-      Resume
-     -->
-    <div id="resume" class="section bg-off-white2 text-center p-4 d-none">
-      <div class="d-flex flex-column align-items-center p-lg-5">
-        <h2 class="text-light mb-3" style="max-width: 700px;">
-          Learn more about my background and expertise.
-        </h2>
-        <a onclick="requestResume();" role="button"
-        id="request-resume" class="fs-6 link-primary fw-normal">
-          <span class="link-text">
-            Request resume
-          </span>
-          <i class="bi bi-arrow-up-right-square ms-1" style="vertical-align: top;"></i>
-        </a>
-      </div>
-    </div>
-    <!-- 
       Footer
      -->
     <footer>
@@ -400,14 +373,15 @@
         <div class="row bg-white pd-lr-4 pt-1 pb-1">
           <!-- Copyright text -->
           <div class="foot-div col-sm-8 d-flex align-items-center">
-            <p class="text-matte-light text-center fw-normal fs-14px p-2 " 
-            style="margin-bottom: 0px;">
-              Copyright &copy; <script>document.write(`2022 - ${new Date().getFullYear()}`);</script> <span class="text-light">Huy Bui</span>. All rights reserved.
+            <p class="text-matte-light text-center fw-normal fs-14px p-2 " style="margin-bottom: 0px;">
+              Copyright &copy;
+              <script>document.write(`2022 - ${new Date().getFullYear()}`);</script> <span class="text-light">Huy
+                Bui</span>. All rights reserved.
             </p>
           </div> <!-- End copyright text -->
           <!-- Appearance toggle -->
-          <div id="appearance-toggle-container" class="foot-div col-sm d-flex align-items-start p-2" 
-          style="justify-content: flex-end">
+          <div id="appearance-toggle-container" class="foot-div col-sm d-flex align-items-start p-2"
+            style="justify-content: flex-end">
             <div id="appearance-toggle">
               <ul class="nav nav-pills fs-14px">
                 <li class="nav-item">
@@ -434,4 +408,5 @@
   <script src="js/animations.js" type="module"></script>
   <script src="js/appearance.js" type="module"></script>
 </body>
+
 </html>
