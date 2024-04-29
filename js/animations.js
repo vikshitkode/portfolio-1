@@ -36,7 +36,7 @@ addIntersectionObserverFor(greetingSection, (entries, observer) => {
         );
         $("#learn-more").style.animation = "slide_in_down 1s both 1.25s";
     } else {
-        $$("#greeting .initially-hidden").forEach(element => 
+        $$("#greeting .initially-hidden").forEach(element =>
             element.style.animation = "fade_out 0.5s both"
         );
     }
@@ -46,11 +46,11 @@ addIntersectionObserverFor(greetingSection, (entries, observer) => {
 addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observer) => {
     const memojis = $$("#skills .memoji");
     if (entries[0].isIntersecting == true) {
-        memojis.forEach((memoji, index) => 
-            memoji.style.animation = `memoji-${index+1} 1s both 0.25s`
+        memojis.forEach((memoji, index) =>
+            memoji.style.animation = `memoji-${index + 1} 1s both 0.25s`
         );
     } else {
-        memojis.forEach(memoji => 
+        memojis.forEach(memoji =>
             memoji.style.animation = "fade_out 0.25s both"
         );
     }
@@ -60,7 +60,7 @@ addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observ
 addIntersectionObserverFor(sendIcon, (entries, observer) => {
     if (entries[0].isIntersecting) {
         sendIcon.style.animation = "slide_diag_up 0.75s both 0.5s";
-    } 
+    }
     // else {
     //     sendIcon.style.animation = null;
     // }
@@ -76,13 +76,13 @@ const scrollIntoViewOptions = {
 };
 
 // Go to top
-$("#title").addEventListener("click", () => 
+$("#title").addEventListener("click", () =>
     greetingSection.scrollIntoView(scrollIntoViewOptions)
 );
 
 // Go to intro section
-$$(".goto-intro").forEach(item => 
-    item.addEventListener("click", () => 
+$$(".goto-intro").forEach(item =>
+    item.addEventListener("click", () =>
         introSection.scrollIntoView(scrollIntoViewOptions)
     )
 );
@@ -106,16 +106,16 @@ $(".goto-contact").addEventListener("click", () =>
 // Plus go X!
 //
 
-window.plusGoXHandler = function(event) {
+window.plusGoXHandler = function (event) {
     const easingFunction = "cubic-bezier(0.7, 0, 0.2, 1)";
     const checkbox = event.target;
     const label = checkbox.parentElement;
     const icon = label.querySelector("div");
-    
+
     if (icon.classList.contains("animating"))
         return;
     icon.classList.add("animating");
-    
+
     const container = label.parentElement;
     const tile = container.parentElement;
     const tileTitle = tile.querySelector("h5");
@@ -125,22 +125,22 @@ window.plusGoXHandler = function(event) {
 
     if (checkbox.checked) {
         // Turn "+" into "x"
-        icon.style.animation = `make_x 0.65s ${easingFunction} both 0.15s`;
+        icon.style.animation = `make_x 0.65s ${easingFunction} both`;
         // Hide cover elements
         tileContent.forEach(element => {
-            element.style.animation = "fade_out 0.45s both 0.25s";
+            element.style.animation = "fade_out 0.45s both";
         });
+        // Make title white
+        tileTitle.classList.add("text-white-animated");
+        // Show overlay background
+        tileOverlayBackground.style.animation = "fade_in 0.55s both";
+        // Check
+        label.classList.add("checked");
         setTimeout(() => {
-            // Make title white
-            tileTitle.classList.add("text-white-animated");
             // Show overlay
             tileOverlay.classList.add("text-white-animated");
             tileOverlay.classList.remove("d-none");
             tileOverlay.style.animation = "slide_in_down 0.5s both";
-            // Show overlay background
-            tileOverlayBackground.style.animation = "fade_in 0.75s both";
-            // Check
-            label.classList.add("checked");
             // Animation finished
             icon.classList.remove("animating");
         }, 800);
@@ -169,11 +169,11 @@ window.plusGoXHandler = function(event) {
     }
 }
 
-window.contactPlusGoXHandler = function(event) {
+window.contactPlusGoXHandler = function (event) {
     plusGoXHandler(event);
     if (event.target.checked)
-        sendIcon.style.animation = "slide_out_diag_up 0.75s both 0.25s";
-    else setTimeout(() => 
+        sendIcon.style.animation = "slide_out_diag_up 0.75s both 0s";
+    else setTimeout(() =>
         sendIcon.style.animation = "slide_diag_up 0.75s both 0s", 750
     );
 }
