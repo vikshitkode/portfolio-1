@@ -18,7 +18,7 @@
   --dark-bg-color: rgb(33, 37, 41);
   /* --greeting-gradient: linear-gradient(rgb(6, 15, 33) 30%, black 90%); */
   /* --greeting-gradient: linear-gradient(rgb(33, 0, 20) 30%, black 90%); */
-  --greeting-gradient: linear-gradient(rgb(32, 32, 32) 30%, black 90%);
+  --greeting-gradient: linear-gradient(rgb(20, 20, 20) 30%, black 90%);
   --nav-height: calc(1rem + 40px);
   --nav-background: rgba(240, 240, 240, 0.9);
   --nav-background-dark: rgb(55, 55, 55, 0.9);
