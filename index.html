@@ -221,11 +221,11 @@
               <div class="row row-cols-1 g-3 g-md-4">
                 <div class="col">
                   <div class="tile bg-white rounded-5 d-flex flex-column"
-                    style="min-height: unset !important; background: linear-gradient(15deg, var(--my-blueish-grey), var(--my-light-blueish-grey));">
+                    style="min-height: unset !important; background: linear-gradient(15deg, var(--my-dark-grey), var(--my-light-dark-grey)); overflow: hidden;">
                     <!-- Content -->
-                    <div class="tile-content row row-cols-1" style="height: 75vh">
+                    <div class="tile-content row row-cols-1" style="height: 80vh">
                       <!-- Text -->
-                      <div class="col col-md-5 d-flex flex-row align-items-center p-5">
+                      <div class="col col-md-4 d-flex flex-row align-items-center p-5">
                         <div class="text-center text-sm-start px-3 ps-lg-5">
                           <h2 class="text-white mb-3">
                             Discover how this portfolio was built.
@@ -241,8 +241,8 @@
                       </div>
                       <!-- Image -->
                       <div
-                        class="col col-md-7 d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
-                        style="z-index: -1;">
+                        class="col col-md-8 d-flex align-items-end justify-content-start justify-content-sm-center m-0 ps-1 ps-sm-5 pe-lg-5"
+                        style="z-index: -1; transform: translateZ(0);"> <!-- translateZ(0) needed because border-radius + overflow: hidden is whack on Safari -->
                         <img src="assets/img/macbook-code+portfolio.png" alt="portfolio+code"
                           class="device macbook ms-5 ms-lg-0">
                       </div>

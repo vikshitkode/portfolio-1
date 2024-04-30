@@ -34,6 +34,8 @@
   --my-coral: #f95c30;
   --my-teal: #2b9ca1;
   --my-green: #0c9d46;
+  --my-dark-grey: rgb(16, 16, 16);
+  --my-light-dark-grey: rgb(33, 37, 41);
 }
 
 /* Pointer cursor */
