@@ -16,7 +16,9 @@
   --light-bg-color: white;
   /* --dark-bg-color: rgb(20, 20, 31); */
   --dark-bg-color: rgb(33, 37, 41);
-  --greeting-gradient: linear-gradient(rgb(6, 15, 33) 30%, black 90%);
+  /* --greeting-gradient: linear-gradient(rgb(6, 15, 33) 30%, black 90%); */
+  /* --greeting-gradient: linear-gradient(rgb(33, 0, 20) 30%, black 90%); */
+  --greeting-gradient: linear-gradient(rgb(32, 32, 32) 30%, black 90%);
   --nav-height: calc(1rem + 40px);
   --nav-background: rgba(240, 240, 240, 0.9);
   --nav-background-dark: rgb(55, 55, 55, 0.9);
@@ -29,6 +31,9 @@
   --my-light-purple: #9f91fe;
   --my-blueish-grey: #1f1c2a;
   --my-light-blueish-grey: #34557a;
+  --my-coral: #f95c30;
+  --my-teal: #2b9ca1;
+  --my-green: #0c9d46;
 }
 
 /* Pointer cursor */
@@ -473,7 +478,7 @@ a[class*="link-"]:hover {
   }
 
   #navbar .navbar-brand {
-    opacity: 0.85;
+    opacity: 0.87;
     transition: opacity 0.25s ease;
   }
 
@@ -634,10 +639,12 @@ h2 {
 
 /* Intro */
 #intro .memoji-container {
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, transparent 98%);
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, transparent 98%);
+  /* -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, transparent 98%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 65%, transparent 98%); */
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  /* filter: none; */
+  max-width: 555px;
 }
 
 /* Skills */
