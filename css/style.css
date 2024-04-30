@@ -18,7 +18,7 @@
   --dark-bg-color: rgb(33, 37, 41);
   /* --greeting-gradient: linear-gradient(rgb(6, 15, 33) 30%, black 90%); */
   /* --greeting-gradient: linear-gradient(rgb(33, 0, 20) 30%, black 90%); */
-  --greeting-gradient: linear-gradient(rgb(20, 20, 20) 30%, black 90%);
+  --greeting-gradient: linear-gradient(var(--dark-bg-color) 10%, black 70%);
   --nav-height: calc(1rem + 40px);
   --nav-background: rgba(240, 240, 240, 0.9);
   --nav-background-dark: rgb(55, 55, 55, 0.9);
@@ -1063,6 +1063,30 @@ i.bi.bi-chevron-down {
   }
 }
 
+@keyframes memoji-1-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(6px, 8px);
+  }
+}
+
+@-webkit-keyframes memoji-1-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(6px, 8px);
+  }
+}
+
 @keyframes memoji-2 {
   from {
     transform: translateY(35px);
@@ -1087,6 +1111,42 @@ i.bi.bi-chevron-down {
   }
 }
 
+@keyframes memoji-2-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@-webkit-keyframes memoji-2-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@-webkit-keyframes memoji-2-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
+}
+
 @keyframes memoji-3 {
   from {
     transform: translate(-60px, 80px);
@@ -1108,6 +1168,30 @@ i.bi.bi-chevron-down {
   to {
     transform: translate(0px, 0px);
     opacity: 1;
+  }
+}
+
+@keyframes memoji-3-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-6px, 8px);
+  }
+}
+
+@-webkit-keyframes memoji-3-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-6px, 8px);
   }
 }
 

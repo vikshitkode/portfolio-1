@@ -46,8 +46,10 @@ addIntersectionObserverFor(greetingSection, (entries, observer) => {
 addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observer) => {
     const memojis = $$("#skills .memoji");
     if (entries[0].isIntersecting == true) {
-        memojis.forEach((memoji, index) =>
-            memoji.style.animation = `memoji-${index + 1} 1s both 0.25s`
+        memojis.forEach((memoji, i) =>
+            memoji.style.animation = `
+            memoji-${i+1} 1s ease-in-out both ${0.25+i/9}s,
+            memoji-${i+1}-pulse 3s ease-in-out ${1+i/3+0.25+i/9}s infinite both`
         );
     } else {
         memojis.forEach(memoji =>
