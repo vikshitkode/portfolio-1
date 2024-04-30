@@ -17,7 +17,7 @@ fetchJSON("assets/data.json").then(data => {
     $("#greeting p").innerText = data.greeting.description;
 
     // Introduction
-    $("#intro .tile h2").innerText = data.intro.heading;
+    $("#intro .tile h2").innerHTML = data.intro.heading;
     data.intro.description.split("\n").forEach(line =>
         $("#intro .tile-overlay div>p").insertAdjacentHTML("beforeend", `<p>${line}</p>`)
     );

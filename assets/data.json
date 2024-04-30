@@ -4,7 +4,7 @@
         "description": "I'm Huy. I make things for iOS and the Web."
     },
     "intro": {
-        "heading": "You know, I'm something of a (computer) scientist myself.",
+        "heading": "You know, I'm something of a <span style=\"color: var(--my-blue);\">computer scientist</span> myself.",
         "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!\nI received my diploma from Douglas College about two years ago currently attending Simon Fraser University to complete my bachelor's degree. I look forward to the exciting opportunities and challenges that lie ahead!"
     },
     "skills": {
