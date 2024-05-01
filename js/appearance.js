@@ -32,31 +32,31 @@ NodeList.prototype.removeClass = function(c) {
 
 const lightAppearance = () => {
     navBar.classList.remove("navbar-dark");
-    navBarTogglerBreadCrusts.setBackgroundColor("var(--dark-bg-color)");
+    navBarTogglerBreadCrusts.setBackgroundColor("var(--dark-secondary)");
     blurBackgroundElements.setBackgroundColor("var(--nav-background)");
     lightOutlineButtons.removeClass("btn-outline-light");
     lightOutlineButtons.addClass("btn-outline-primary");
     matteLightTexts.addClass("text-matte-dark");
-    miscelllaneousElements.setBackgroundColor("var(--light-bg-color)");
+    miscelllaneousElements.setBackgroundColor("var(--light-secondary)");
     
     $$(".text-light").addClass("text-dark");
-    $$(".bg-white").removeClass("bg-off-black");
-    $$(".bg-off-white, .bg-off-white2").removeClass("bg-black");
+    $$(".bg-light-secondary").removeClass("bg-dark-secondary");
+    $$(".bg-light").removeClass("bg-dark");
     $$(".app-icon").removeClass("dark");
 };
 
 const darkAppearance = () => {
     navBar.classList.add("navbar-dark");
-    navBarTogglerBreadCrusts.setBackgroundColor("var(--light-bg-color)");
+    navBarTogglerBreadCrusts.setBackgroundColor("var(--light-secondary)");
     blurBackgroundElements.setBackgroundColor("var(--nav-background-dark)");
     lightOutlineButtons.removeClass("btn-outline-primary");
     lightOutlineButtons.addClass("btn-outline-light");
     matteLightTexts.removeClass("text-matte-dark");
-    miscelllaneousElements.setBackgroundColor("var(--dark-bg-color)");
+    miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
     
     $$(".text-light").removeClass("text-dark");
-    $$(".bg-white").addClass("bg-off-black");
-    $$(".bg-off-white, .bg-off-white2").addClass("bg-black");
+    $$(".bg-light-secondary").addClass("bg-dark-secondary");
+    $$(".bg-light").addClass("bg-dark");
     $$(".app-icon").addClass("dark");
 };
 

@@ -1,0 +1,41 @@
+/* 
+    typography.css
+    portfolio
+
+    Created by Foxster on 2024-05-01.
+    Copyright (c) 2024 Foxster. All rights reserved.
+*/
+
+* {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fw-kinda-bold {
+  font-weight: 500;
+}
+
+h5 {
+  margin-bottom: .5rem !important;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* md */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) {
+  h2 {
+    font-size: 3rem;
+  }
+}

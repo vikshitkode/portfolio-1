@@ -1,0 +1,503 @@
+/* 
+    animations.css
+    portfolio
+
+    Created by Foxster on 2024-05-01.
+    Copyright (c) 2024 Foxster. All rights reserved.
+*/
+
+/* Make "X" */
+@keyframes make_x {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(45deg);
+  }
+}
+
+@-webkit-keyframes make_x {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(45deg);
+  }
+}
+
+/* Make "+" */
+@keyframes make_plus {
+  from {
+    transform: rotateZ(45deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes make_plus {
+  from {
+    transform: rotateZ(45deg);
+  }
+
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* Bounce in */
+@keyframes bounce_in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  75% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce_in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  75% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Slide in */
+@keyframes slide_in {
+  from {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide_in {
+  from {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Slide in down */
+@keyframes slide_in_down {
+  from {
+    transform: translateY(-35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide_in_down {
+  from {
+    transform: translateY(-35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Slide out up */
+@keyframes slide_out_up {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-35px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide_out_up {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-35px);
+    opacity: 0;
+  }
+}
+
+/* Fade in */
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_in_d_block {
+  from {
+    opacity: 0;
+    display: none;
+  }
+
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-webkit-keyframes fade_in_d_block {
+  from {
+    opacity: 0;
+    display: none;
+  }
+
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+
+/* Fade out */
+@keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade_out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade_out_d_none {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes fade_out_d_none {
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Slide diagonally up */
+@keyframes slide_diag_up {
+  from {
+    transform: translate(-100px, 100px);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide_diag_up {
+  from {
+    transform: translate(-100px, 100px);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+/* Slide out diagonally up */
+@keyframes slide_out_diag_up {
+  from {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide_out_diag_up {
+  from {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  }
+}
+
+/* Memojis */
+@keyframes memoji-1 {
+  from {
+    transform: translate(60px, 80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes memoji-1 {
+  from {
+    transform: translate(60px, 80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes memoji-1-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(6px, 8px);
+  }
+}
+
+@-webkit-keyframes memoji-1-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(6px, 8px);
+  }
+}
+
+@keyframes memoji-2 {
+  from {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes memoji-2 {
+  from {
+    transform: translateY(35px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes memoji-2-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@-webkit-keyframes memoji-2-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@-webkit-keyframes memoji-2-pulse {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(9px);
+  }
+}
+
+@keyframes memoji-3 {
+  from {
+    transform: translate(-60px, 80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes memoji-3 {
+  from {
+    transform: translate(-60px, 80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes memoji-3-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-6px, 8px);
+  }
+}
+
+@-webkit-keyframes memoji-3-pulse {
+
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(-6px, 8px);
+  }
+}
+
+@keyframes point-down {
+  0% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+@-webkit-keyframes point-down {
+  0% {
+    -webkit-transform: translateY(-2px);
+  }
+
+  50% {
+    -webkit-transform: translateY(2px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-2px);
+  }
+}
+
+#learn-more i.bi-chevron-down {
+  display: inline-block;
+  animation: point-down 1s infinite;
+}

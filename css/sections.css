@@ -1,0 +1,45 @@
+/* 
+    sections.css
+    portfolio
+
+    Created by Foxster on 2024-05-01.
+    Copyright (c) 2024 Foxster. All rights reserved.
+*/
+
+:root {
+  --sm-nav-height: calc(1rem + 38px);
+}
+
+.section>.section-inner-container {
+  padding: 3.5vh 0;
+  width: 98.5%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section>.section-inner-container .pd-tb-1-5-rem {
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+}
+
+.section>.section-inner-container .pd-b-2-2-5-rem {
+  padding-bottom: 2.25rem !important;
+}
+
+/* Greeting section */
+#greeting {
+  background: var(--greeting-gradient);
+  padding-top: calc(var(--sm-nav-height) + 3rem) !important;
+  height: 100vh;
+}
+
+/* Contact section */
+.app-icon {
+  width: 42px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.app-icon.dark {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}

@@ -1,0 +1,52 @@
+/* 
+    spacing.css
+    portfolio
+
+    Created by Foxster on 2024-05-01.
+    Copyright (c) 2024 Foxster. All rights reserved.
+*/
+
+/* Padding */
+.pd-lr-3 {
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+.pd-lr-4 {
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+}
+
+/* Before md */
+@media (max-width: 767px) {
+  .p-4-5 {
+    padding: 1.8rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .p-md-5 {
+    padding: 2.5rem !important;
+  }
+
+  p.fs-5.text-white.initially-hidden {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Width */
+.w-35-percent {
+  width: 35% !important;
+}
+
+/* Line height */
+.lh-md {
+  line-height: 1.6 !important;
+}
+
+@media (max-width: 767px) {
+  .container-sm {
+    max-width: 560px;
+  }
+}

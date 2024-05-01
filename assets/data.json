@@ -4,18 +4,18 @@
         "description": "I'm Huy. I make things for iOS and the Web."
     },
     "intro": {
-        "heading": "You know, I'm something of a <span style=\"color: var(--my-blue);\">computer scientist</span> myself.",
+        "heading": "You know, I'm something of a <span style=\"color: var(--azure);\">computer scientist</span> myself.",
         "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!\nI received my diploma from Douglas College about two years ago currently attending Simon Fraser University to complete my bachelor's degree. I look forward to the exciting opportunities and challenges that lie ahead!"
     },
     "skills": {
         "heading": "Skills",
-        "color": "var(--my-orange)",
+        "color": "var(--orange)",
         "muted_color": "#eb8534",
         "description": "I've always enjoyed exploring and experimenting with a wide range of technologies. My strength is in my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes!",
         "list": [
             {
                 "heading": "Web development",
-                "cover_description": "With exposure to many fullstack web technologies and experience working on web projects of all scales and complexities, I'm ready to tackle any challenge thrown my way. 👊",
+                "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all scales and complexities, I'm ready to tackle any challenge thrown my way. 👊",
                 "description": "My college courses and projects have equipped me with a solid foundation of modern fullstack web technologies like Node.js, Express, and React. Overall, I've thoroughly enjoyed building robust and scalable web applications with these tools, and I'm always looking to expand my knowledge base.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
                 "img": "assets/img/iphone-altsource-viewer2.png",
                 "img_type": "device",

@@ -1,0 +1,43 @@
+/* 
+    links.css
+    portfolio
+
+    Created by Foxster on 2024-05-01.
+    Copyright (c) 2024 Foxster. All rights reserved.
+*/
+
+#navbar .nav-link.active {
+  font-weight: 500;
+}
+
+a[class*="link-"] {
+  text-decoration: none;
+}
+
+a[class*="link-"]:hover {
+  text-decoration: underline;
+}
+
+@media (hover: hover) {
+  a.social-link {
+    transition: scale 0.35s ease;
+    text-decoration: none;
+  }
+
+  a.social-link:hover {
+    scale: 1.15;
+  }
+
+  #navbar .navbar-brand {
+    opacity: 0.87;
+    transition: opacity 0.25s ease;
+  }
+
+  #navbar .navbar-brand:hover {
+    opacity: 1;
+  }
+}
+
+#formspree-logo:hover {
+  opacity: 0.75;
+}
