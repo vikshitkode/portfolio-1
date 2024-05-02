@@ -33,6 +33,16 @@
 ***** Backgrounds *****
 ***********************/
 
+.bg-light {
+  background-color: var(--light) !important;
+  color: black;
+}
+
+.bg-light-secondary {
+  background-color: var(--light-secondary);
+  color: black;
+}
+
 .bg-dark {
   background-color: var(--dark) !important;
   color: white !important;
@@ -41,16 +51,6 @@
 .bg-dark-secondary {
   background-color: var(--dark-secondary) !important;
   color: white !important;
-}
-
-.bg-light {
-  background-color: var(--light);
-  color: black;
-}
-
-.bg-light-secondary {
-  background-color: var(--light-secondary);
-  color: black;
 }
 
 .bg-blur {
