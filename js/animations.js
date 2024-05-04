@@ -36,9 +36,9 @@ addIntersectionObserverFor(greetingSection, (entries, observer) => {
         );
         $("#learn-more").style.animation = "slide_in_down 1s both 1.25s";
     } else {
-        $$("#greeting .initially-hidden").forEach(element =>
-            element.style.animation = "fade_out 0.5s both"
-        );
+        // $$("#greeting .initially-hidden").forEach(element =>
+        //     element.style.animation = "fade_out 0.5s both"
+        // );
     }
 });
 
@@ -47,14 +47,12 @@ addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observ
     const memojis = $$("#skills .memoji");
     if (entries[0].isIntersecting == true) {
         memojis.forEach((memoji, i) =>
-            memoji.style.animation = `
-            memoji-${i+1} 1s ease-in-out both ${0.25+i/9}s,
-            memoji-${i+1}-pulse 3s ease-in-out ${1+i/3+0.25+i/9}s infinite both`
+            memoji.style.animation = `memoji-${i+1}-pulse 3s ease-in-out ${i/3}s infinite both`
         );
     } else {
-        memojis.forEach(memoji =>
-            memoji.style.animation = "fade_out 0.25s both"
-        );
+        // memojis.forEach(memoji =>
+        //     memoji.style.animation = "fade_out 0.25s both"
+        // );
     }
 });
 
