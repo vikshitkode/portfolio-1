@@ -134,22 +134,24 @@ window.plusGoXHandler = function (event) {
         icon.style.animation = `make_x 0.65s ${easingFunctions[0]} both`;
         // Make title white
         tileTitle.classList.add("text-white-animated");
-        // Show overlay background
-        tileOverlayBackground.style.animation = `fade_in 0.65s ${easingFunctions[1]} both`;
-        // Hide cover elements
-        tileContent.forEach(element => {
-            element.style.animation = "fade_out 0.55s both";
-        });
-        // Checked
-        label.classList.add("checked");
         setTimeout(() => {
-            // Show overlay
-            tileOverlay.classList.add("text-white-animated");
-            tileOverlay.classList.remove("d-none");
-            tileOverlay.style.animation = `slide_in_down 0.65s ${easingFunctions[2]} both`;
-            // Animation finished
-            icon.classList.remove("animating");
-        }, 650);
+            // Hide cover elements
+            tileContent.forEach(element => {
+                element.style.animation = "fade_out 0.45s both";
+            });
+            // Show overlay background
+            tileOverlayBackground.style.animation = `fade_in 0.65s ${easingFunctions[1]} both`;
+            // Checked
+            label.classList.add("checked");
+            setTimeout(() => {
+                // Show overlay
+                tileOverlay.classList.add("text-white-animated");
+                tileOverlay.classList.remove("d-none");
+                tileOverlay.style.animation = `slide_in_down 0.65s ${easingFunctions[2]} both`;
+                // Animation finished
+                icon.classList.remove("animating");
+            }, 650);
+        }, 100);
     } else {
         // Turn "x" into "+"
         icon.style.animation = `make_plus 0.65s ${easingFunctions[0]} both`;
