@@ -47,7 +47,7 @@ addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observ
     const memojis = $$("#skills .memoji");
     if (entries[0].isIntersecting == true) {
         memojis.forEach((memoji, i) =>
-            memoji.style.animation = `memoji-${i+1}-pulse 3s ease-in-out ${i/3}s infinite both`
+            memoji.style.animation = `memoji-${i + 1}-pulse 3s ease-in-out ${i / 3}s infinite both`
         );
     } else {
         // memojis.forEach(memoji =>
@@ -107,13 +107,19 @@ $(".goto-contact").addEventListener("click", () =>
 //
 
 window.plusGoXHandler = function (event) {
-    const easingFunction = "cubic-bezier(0.7, 0, 0.2, 1)";
+    const easingFunctions = [
+        "cubic-bezier(0.7, 0, 0.2, 1)",
+        "cubic-bezier(0.66, 0, 0.01, 1)",
+        "cubic-bezier(0.66, 0, 0.2, 1)"
+    ];
+
     const checkbox = event.target;
     const label = checkbox.parentElement;
     const icon = label.querySelector("div");
 
     if (icon.classList.contains("animating"))
         return;
+    
     icon.classList.add("animating");
 
     const container = label.parentElement;
@@ -125,47 +131,48 @@ window.plusGoXHandler = function (event) {
 
     if (checkbox.checked) {
         // Turn "+" into "x"
-        icon.style.animation = `make_x 0.65s ${easingFunction} both`;
-        // Hide cover elements
-        tileContent.forEach(element => {
-            element.style.animation = "fade_out 0.45s both";
-        });
+        icon.style.animation = `make_x 0.65s ${easingFunctions[0]} both`;
         // Make title white
         tileTitle.classList.add("text-white-animated");
         // Show overlay background
-        tileOverlayBackground.style.animation = "fade_in 0.55s both";
-        // Check
+        tileOverlayBackground.style.animation = `fade_in 0.65s ${easingFunctions[1]} both`;
+        // Hide cover elements
+        tileContent.forEach(element => {
+            element.style.animation = "fade_out 0.55s both";
+        });
+        // Checked
         label.classList.add("checked");
         setTimeout(() => {
             // Show overlay
             tileOverlay.classList.add("text-white-animated");
             tileOverlay.classList.remove("d-none");
-            tileOverlay.style.animation = "slide_in_down 0.5s both";
+            tileOverlay.style.animation = `slide_in_down 0.65s ${easingFunctions[2]} both`;
             // Animation finished
             icon.classList.remove("animating");
-        }, 800);
+        }, 650);
     } else {
         // Turn "x" into "+"
-        icon.style.animation = `make_plus 0.65s ${easingFunction} both 0.15s`
+        icon.style.animation = `make_plus 0.65s ${easingFunctions[0]} both`;
         // Hide overlay
-        tileOverlay.style.animation = "slide_out_up 0.5s both"
+        tileOverlay.style.animation = `slide_out_up 0.65s ${easingFunctions[2]} both`;
         setTimeout(() => {
             tileOverlay.classList.add("d-none");
             tileOverlay.classList.remove("text-white-animated");
             // Hide overlay background
-            tileOverlayBackground.style.animation = "fade_out 0.45s both 0.25s";
+            tileOverlayBackground.style.animation = `fade_out 0.65s ${easingFunctions[1]} both`;
             // Show cover elements
             tileContent.forEach(coverElement => {
-                coverElement.style.animation = "fade_in 0.45s both 0.25s";
+                coverElement.style.animation = "fade_in 0.55s both 0.15s";
             });
+            // Make title colored
+            tileTitle.classList.remove("text-white-animated");
             setTimeout(() => {
-                tileTitle.classList.remove("text-white-animated");
-                // Uncheck
+                // Unchecked
                 label.classList.remove("checked");
                 // Animation finished
                 icon.classList.remove("animating");
-            }, 250);
-        }, 500);
+            }, 150);
+        }, 650);
     }
 }
 

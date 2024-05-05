@@ -43,7 +43,7 @@
 .tile h5,
 .tile p {
   margin-bottom: 4px !important;
-  transition: color 0.45s ease;
+  transition: color 0.65s cubic-bezier(0.66, 0, 0.01, 1) !important;
 }
 
 .tile p {
@@ -97,7 +97,7 @@
 
 .text-white-animated {
   color: white !important;
-  transition: color ease 0.5s;
+  transition: color 0.65s cubic-bezier(0.66, 0, 0.01, 1) !important;
 }
 
 /* plus-go-x button container */
