@@ -28,6 +28,15 @@
     margin-top: 2.8rem;
   }
 
+  .technologies-row {
+    animation: scroll-mobile 120s linear infinite;
+  }
+  
+  .technologies-row:last-of-type {
+    left: -12.5%;
+    animation: scroll-mobile 90s linear infinite;
+  }
+
   .technologies-row>img {
     width: 25%;
   }

@@ -521,3 +521,23 @@
     transform: translateX(-100%);
   }
 }
+
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
