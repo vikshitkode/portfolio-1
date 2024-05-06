@@ -6,7 +6,7 @@
 //  Copyright (c) 2022 Foxster. All rights reserved.
 //
 
-import { $ } from "./lib.js";
+import { $, $$ } from "./lib.js";
 import { Tile } from "./components/Tile.js";
 import { refreshAppearance } from "./appearance.js";
 
@@ -21,6 +21,25 @@ fetchJSON("assets/data.json").then(data => {
     data.intro.description.split("\n").forEach(line =>
         $("#intro .tile-overlay div>p").insertAdjacentHTML("beforeend", `<p>${line}</p>`)
     );
+
+    // Technologies scroll
+    const rows = $$(".technologies-row");
+    for (let i = 0; i < 2; i++) {
+        for (const name of
+            ["ios-sdk", "node", "react", "docker", "gcp", "mongodb", "pg", "mysql"]
+        ) {
+            rows[1].insertAdjacentHTML("beforeend", `
+                <img src="assets/img/technologies/${name}.png" alt="${name}">
+            `);
+        }
+        for (const name of
+            ["swift", "html", "css", "js", "php", "java", "python", "c"]
+        ) {
+            rows[0].insertAdjacentHTML("beforeend", `
+                <img src="assets/img/technologies/${name}.png" alt="${name}">
+            `);
+        }
+    }
 
     // Skills
     $("#skills .tile-content p:first-of-type").innerText = data.skills.description;
@@ -48,7 +67,7 @@ fetchJSON("assets/data.json").then(data => {
             <i class="bi bi-chevron-right"></i>
         </a>
         <!-- Topics -->
-        <p>`; 
+        <p>`;
         // Grab project topics from data.json
         project.topics?.forEach(topic => customCoverDescriptionHTML += `
             <span class="topic-badge m-1" style="color:${data.projects.color}; border-color: ${data.projects.color};">
@@ -111,7 +130,7 @@ async function fetchJSON(url) {
     return json;
 }
 
-window.requestResume = function() {
+window.requestResume = function () {
     $("#contact").scrollIntoView(scrollIntoViewOptions);
     const checkbox = $("#contact .plus-go-x>input");
     const message = $("#contact #message");

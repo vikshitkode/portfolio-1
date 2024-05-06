@@ -33,6 +33,20 @@
   height: 100vh;
 }
 
+.technologies-row {
+  animation: scroll 180s linear infinite;
+}
+
+.technologies-row:last-of-type {
+  position: relative; left: -6.25%;
+  animation: scroll 120s linear infinite;
+}
+
+.technologies-row>img {
+  width: 12.5%;
+  flex-shrink: 0;
+}
+
 /* Contact section */
 .app-icon {
   width: 42px;

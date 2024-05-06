@@ -43,18 +43,18 @@ addIntersectionObserverFor(greetingSection, (entries, observer) => {
 });
 
 // Skills memoji container
-addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observer) => {
-    const memojis = $$("#skills .memoji");
-    if (entries[0].isIntersecting == true) {
-        memojis.forEach((memoji, i) =>
-            memoji.style.animation = `memoji-${i + 1}-pulse 3s ease-in-out ${i / 3}s infinite both`
-        );
-    } else {
-        // memojis.forEach(memoji =>
-        //     memoji.style.animation = "fade_out 0.25s both"
-        // );
-    }
-});
+// addIntersectionObserverFor($("#skills .col .memoji-container"), (entries, observer) => {
+//     const memojis = $$("#skills .memoji");
+//     if (entries[0].isIntersecting == true) {
+//         memojis.forEach((memoji, i) =>
+//             memoji.style.animation = `memoji-${i + 1}-pulse 3s ease-in-out ${i / 3}s infinite both`
+//         );
+//     } else {
+//         // memojis.forEach(memoji =>
+//         //     memoji.style.animation = "fade_out 0.25s both"
+//         // );
+//     }
+// });
 
 // Send icon
 addIntersectionObserverFor(sendIcon, (entries, observer) => {

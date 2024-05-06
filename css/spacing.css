@@ -22,12 +22,26 @@
   .p-4-5 {
     padding: 1.8rem;
   }
+
+  .m-neg-4-5 {
+    margin: 1.8rem -1.8rem;
+    margin-top: 2.8rem;
+  }
+
+  .technologies-row>img {
+    width: 25%;
+  }
 }
 
 /* md */
 @media (min-width: 768px) {
   .p-md-5 {
     padding: 2.5rem !important;
+  }
+
+  .m-neg-md-5 {
+    margin: 2.5rem -2.5rem;
+    margin-top: 3.5rem;
   }
 
   p.fs-5.text-white.initially-hidden {
