@@ -17,7 +17,7 @@
                 "heading": "Web development",
                 "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all scales and complexities, I'm ready to tackle any challenge thrown my way. 👊",
                 "description": "My college courses and projects have equipped me with a solid foundation of modern fullstack web technologies like Node.js, Express, and React. Overall, I've thoroughly enjoyed building robust and scalable web applications with these tools, and I'm always looking to expand my knowledge base.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
-                "img": "assets/img/iphone-altsource-viewer2.png",
+                "img": "assets/img/mockups/iphone/iphone-altsource-viewer-2.png",
                 "img_type": "device",
                 "img_alt": "iphone-web-app",
                 "bootstrap_icon": "bi-globe2",
@@ -27,7 +27,7 @@
                 "heading": "Mobile development",
                 "cover_description": "As a passionate Apple fan, I've devoted a significant amount of my free time learning about iOS and, more recently, getting the hang of iOS app and tweak development.",
                 "description": "I've always been fascinated with user-friendly software (ever since I was a kid). My interest in iOS development ultimately developed from this passion. Along the way, I created various mini-projects to familiarize myself with the various iOS frameworks and guidelines.\nMore recently, I ventured into iOS tweak development as a result of some frustrations with the iOS YouTube app. The outcome? \"DontEatMyContent,\" a tweak that cleverly prevents display cutouts from cutting into video content in YouTube, prioritizing an immersive video watching experience.\nAdditionally, I was introduced to Android app development through a college course, and that's when I created \"BCExplorer.\" This lil app is all about making the most out of your stay in British Columbia by showcasing some fantastic attractions you shouldn't miss.",
-                "img": "assets/img/iphone-today1.png",
+                "img": "assets/img/mockups/iphone/iphone-today-1.png",
                 "img_type": "device",
                 "img_alt": "iphone-app",
                 "bootstrap_icon": "bi-phone",
@@ -76,7 +76,7 @@
                     "notch",
                     "dynamic-island"
                 ],
-                "img": "assets/img/iphone-donteatmycontent.png",
+                "img": "assets/img/mockups/iphone/iphone-donteatmycontent.png",
                 "img_type": "device landscape",
                 "img_alt": "donteatmycontent-demo",
                 "center_image": true,
@@ -86,7 +86,7 @@
             {
                 "heading": "uYouPlus",
                 "cover_description": "uYou+ is a modified version of uYou (made by @MiRO92) with additional features and mainly made for non jailbroken users!",
-                "img": "assets/img/iphone-uyouplus.png",
+                "img": "assets/img/mockups/iphone/iphone-uyouplus.png",
                 "img_type": "device",
                 "img_alt": "uyouplus-demo",
                 "max_width": "350px",
@@ -106,7 +106,7 @@
                     "altstore-repo",
                     "altstore-source"
                 ],
-                "img": "assets/img/iphone-altsource-viewer1.png",
+                "img": "assets/img/mockups/iphone/iphone-altsource-viewer-1.png",
                 "max_width": "350px",
                 "img_type": "device",
                 "img_alt": "altsource-demo",
@@ -126,7 +126,7 @@
                     "scss",
                     "full-stack"
                 ],
-                "img": "assets/img/macbook-collabhub.png",
+                "img": "assets/img/mockups/macbook/macbook-collabhub.png",
                 "img_type": "device landscape",
                 "img_alt": "collabhub-demo",
                 "md_size": 6,
@@ -141,7 +141,7 @@
                     "uikit",
                     "catransform3d"
                 ],
-                "img": "assets/img/ipad-pairs.png",
+                "img": "assets/img/mockups/ipad/ipad-pairs.png",
                 "img_type": "device landscape",
                 "img_alt": "pairs-demo",
                 "md_size": 6,
@@ -156,9 +156,9 @@
                     "reminders",
                     "eventkit"
                 ],
-                "img": "assets/img/iphone-today2.png",
+                "img": "assets/img/mockups/iphone/iphone-today-2.png",
                 "img_type": "device",
-                "img_alt": "css3uitableview-demo",
+                "img_alt": "today-demo",
                 "max_width": "350px",
                 "md_size": 6,
                 "lg_size": 4

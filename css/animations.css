@@ -48,58 +48,7 @@
   }
 }
 
-/* Bounce in */
-@keyframes bounce_in {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(0.5);
-  }
-
-  75% {
-    transform: scale(1.25);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes bounce_in {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  25% {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(0.5);
-  }
-
-  75% {
-    transform: scale(1.25);
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Slide in */
+/* Slide in (for greeting Memoji) */
 @keyframes slide_in {
   from {
     transform: translateY(35px);
@@ -124,7 +73,7 @@
   }
 }
 
-/* Slide in down */
+/* Slide in down (for tile content) */
 @keyframes slide_in_down {
   from {
     transform: translateY(-35px);
@@ -149,7 +98,7 @@
   }
 }
 
-/* Slide out up */
+/* Slide out up (for tile content) */
 @keyframes slide_out_up {
   from {
     transform: translateY(0px);
@@ -195,30 +144,6 @@
   }
 }
 
-@keyframes fade_in_d_block {
-  from {
-    opacity: 0;
-    display: none;
-  }
-
-  to {
-    opacity: 1;
-    display: block;
-  }
-}
-
-@-webkit-keyframes fade_in_d_block {
-  from {
-    opacity: 0;
-    display: none;
-  }
-
-  to {
-    opacity: 1;
-    display: block;
-  }
-}
-
 /* Fade out */
 @keyframes fade_out {
   from {
@@ -240,31 +165,7 @@
   }
 }
 
-@keyframes fade_out_d_none {
-  from {
-    opacity: 1;
-    display: block;
-  }
-
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@-webkit-keyframes fade_out_d_none {
-  from {
-    opacity: 1;
-    display: block;
-  }
-
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
-
-/* Slide diagonally up */
+/* Slide diagonally up (send icon) */
 @keyframes slide_diag_up {
   from {
     transform: translate(-100px, 100px);
@@ -287,7 +188,7 @@
   }
 }
 
-/* Slide out diagonally up */
+/* Slide out diagonally up (send icon) */
 @keyframes slide_out_diag_up {
   from {
     transform: translate(0px, 0px);
@@ -309,163 +210,6 @@
   to {
     transform: translate(100px, -100px);
     opacity: 0;
-  }
-}
-
-/* Memojis */
-@keyframes memoji-1 {
-  from {
-    transform: translate(60px, 80px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes memoji-1 {
-  from {
-    transform: translate(60px, 80px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-}
-
-@keyframes memoji-1-pulse {
-
-  0%,
-  100% {
-    transform: translate(0px, 0px);
-  }
-
-  50% {
-    transform: translate(6px, 8px);
-  }
-}
-
-@-webkit-keyframes memoji-1-pulse {
-
-  0%,
-  100% {
-    transform: translate(0px, 0px);
-  }
-
-  50% {
-    transform: translate(6px, 8px);
-  }
-}
-
-@keyframes memoji-2 {
-  from {
-    transform: translateY(35px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes memoji-2 {
-  from {
-    transform: translateY(35px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-}
-
-@keyframes memoji-2-pulse {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(9px);
-  }
-}
-
-@-webkit-keyframes memoji-2-pulse {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(9px);
-  }
-}
-
-@-webkit-keyframes memoji-2-pulse {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(9px);
-  }
-}
-
-@keyframes memoji-3 {
-  from {
-    transform: translate(-60px, 80px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes memoji-3 {
-  from {
-    transform: translate(-60px, 80px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
-}
-
-@keyframes memoji-3-pulse {
-
-  0%,
-  100% {
-    transform: translate(0px, 0px);
-  }
-
-  50% {
-    transform: translate(-6px, 8px);
-  }
-}
-
-@-webkit-keyframes memoji-3-pulse {
-
-  0%,
-  100% {
-    transform: translate(0px, 0px);
-  }
-
-  50% {
-    transform: translate(-6px, 8px);
   }
 }
 
