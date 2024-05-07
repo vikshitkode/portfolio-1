@@ -15,6 +15,10 @@ const projectsSection = $("#projects");
 const contactSection = $("#contact");
 const sendIcon = $("#send-icon");
 
+NodeList.prototype.setAnimation = function (a) {
+    this.forEach(e => e.style.animation = a);
+}
+
 //
 // Intersection observers
 //
@@ -23,7 +27,7 @@ const addIntersectionObserverFor = (element, callback) => {
     return new IntersectionObserver(callback, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0.17
     }).observe(element);
 };
 
@@ -31,14 +35,27 @@ const addIntersectionObserverFor = (element, callback) => {
 addIntersectionObserverFor(greetingSection, (entries, observer) => {
     if (entries[0].isIntersecting) {
         $("#greeting .memoji").style.animation = "slide_in 2s both 0.25s";
-        $$("#greeting .text-white").forEach(text =>
-            text.style.animation = "fade_in 2s both 0.5s"
-        );
+        $$("#greeting .text-white").setAnimation("fade_in 2s both 0.5s");
         $("#learn-more").style.animation = "slide_in_down 1s both 1.25s";
     } else {
         // $$("#greeting .initially-hidden").forEach(element =>
         //     element.style.animation = "fade_out 0.5s both"
         // );
+    }
+});
+
+// Technologies
+addIntersectionObserverFor($("#skills .row .col"), (entries, observer) => {
+    const rows = $$(".technologies-row");
+    if (entries[0].isIntersecting) {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            // Mobile
+            rows.setAnimation("scroll-mobile 90s linear infinite");
+        } else {
+            rows.setAnimation("scroll 90s linear infinite");
+        }
+    } else {
+        rows.setAnimation("fade_out 0.5s both");
     }
 });
 
@@ -105,7 +122,7 @@ window.plusGoXHandler = function (event) {
 
     if (icon.classList.contains("animating"))
         return;
-    
+
     icon.classList.add("animating");
 
     const container = label.parentElement;
@@ -122,9 +139,7 @@ window.plusGoXHandler = function (event) {
         tileTitle.classList.add("text-white-animated");
         setTimeout(() => {
             // Hide cover elements
-            tileContent.forEach(element => {
-                element.style.animation = "fade_out 0.45s both";
-            });
+            tileContent.setAnimation("fade_out 0.45s both");
             // Show overlay background
             tileOverlayBackground.style.animation = `fade_in 0.65s ${easingFunctions[1]} both`;
             // Checked
@@ -149,9 +164,7 @@ window.plusGoXHandler = function (event) {
             // Hide overlay background
             tileOverlayBackground.style.animation = `fade_out 0.65s ${easingFunctions[1]} both`;
             // Show cover elements
-            tileContent.forEach(coverElement => {
-                coverElement.style.animation = "fade_in 0.55s both 0.15s";
-            });
+            tileContent.setAnimation("fade_in 0.55s both 0.15s");
             // Make title colored
             tileTitle.classList.remove("text-white-animated");
             setTimeout(() => {

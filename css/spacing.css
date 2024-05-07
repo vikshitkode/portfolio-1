@@ -28,7 +28,7 @@
   }
 
   .technologies-row {
-    animation: scroll-mobile 120s linear infinite;
+    animation: scroll-mobile 90s linear infinite;
   }
 
   .technologies-row:nth-of-type(2) {
