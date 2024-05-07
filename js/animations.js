@@ -55,7 +55,7 @@ addIntersectionObserverFor($("#skills .row .col"), (entries, observer) => {
             rows.setAnimation("scroll 90s linear infinite");
         }
     } else {
-        rows.setAnimation("fade_out 0.5s both");
+        rows.setAnimation("none");
     }
 });
 
