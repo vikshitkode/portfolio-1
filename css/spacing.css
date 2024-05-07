@@ -24,17 +24,16 @@
   }
 
   .m-neg-4-5 {
-    margin: 1.8rem -1.8rem;
-    margin-top: 2.8rem;
+    margin: 0.8rem -1.8rem;
   }
 
   .technologies-row {
     animation: scroll-mobile 120s linear infinite;
   }
-  
-  .technologies-row:last-of-type {
+
+  .technologies-row:nth-of-type(2) {
     left: -12.5%;
-    animation: scroll-mobile 90s linear infinite;
+    /* animation: scroll-mobile 90s linear infinite; */
   }
 
   .technologies-row>img {
@@ -49,8 +48,8 @@
   }
 
   .m-neg-md-5 {
-    margin: 2.5rem -2.5rem;
-    margin-top: 3.5rem;
+    margin: 1.5rem -2.5rem;
+    margin-top: 2.5rem;
   }
 
   p.fs-5.text-white.initially-hidden {

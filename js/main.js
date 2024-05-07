@@ -22,26 +22,20 @@ fetchJSON("assets/data.json").then(data => {
         $("#intro .tile-overlay div>p").insertAdjacentHTML("beforeend", `<p>${line}</p>`)
     );
 
-    // Technologies scroll
-    const rows = $$(".technologies-row");
-    for (let i = 0; i < 2; i++) {
-        for (const name of
-            ["ios-sdk", "node", "react", "docker", "gcp", "mongodb", "pg", "mysql"]
-        ) {
-            rows[1].insertAdjacentHTML("beforeend", `
-                <img src="assets/img/technologies/${name}.png" alt="${name}">
-            `);
-        }
-        for (const name of
-            ["swift", "html", "css", "js", "php", "java", "python", "c"]
-        ) {
-            rows[0].insertAdjacentHTML("beforeend", `
-                <img src="assets/img/technologies/${name}.png" alt="${name}">
-            `);
-        }
-    }
-
     // Skills
+    const rows = $$(".technologies-row");
+    const languages = ["html", "css", "js", "php", "java", "python", "swift", "c"];
+    const technologies = ["node", "react", "docker", "gcp", "pg", "mysql", "mongodb", "ios-sdk"];
+    const tools = ["github", "postman", "vscode", "eclipse", "android-studio", "intellij", "xcode", "terminal"];
+    for (let i = 0; i < 2; i++) {
+        for (const language of languages)
+            rows[0].insertAdjacentHTML("beforeend", `<img src="assets/img/technologies/${language}.png" alt="${language}">`);
+        for (const technology of technologies)
+            rows[1].insertAdjacentHTML("beforeend", `<img src="assets/img/technologies/${technology}.png" alt="${technology}">`);
+        for (const tool of tools)
+            rows[2].insertAdjacentHTML("beforeend", `<img src="assets/img/technologies/${tool}.png" alt="${tool}">`);
+    }
+    rows[1].insertAdjacentHTML("beforeend", `<img src="assets/img/technologies/${technologies[0]}.png" alt="${technologies[0]}">`);
     $("#skills .tile-content p:first-of-type").innerText = data.skills.description;
     data.skills.list.forEach(item =>
         $("#skills>.section-inner-container>.row").insertAdjacentHTML("beforeend",

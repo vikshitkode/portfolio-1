@@ -34,12 +34,12 @@
 }
 
 .technologies-row {
-  animation: scroll 180s linear infinite;
+  animation: scroll 90s linear infinite;
 }
 
-.technologies-row:last-of-type {
+.technologies-row:nth-of-type(2) {
   position: relative; left: -6.25%;
-  animation: scroll 120s linear infinite;
+  /* animation: scroll 60s linear infinite; */
 }
 
 .technologies-row>img {
