@@ -6,6 +6,17 @@
     Copyright (c) 2024 Foxster. All rights reserved.
 */
 
+/* Pointer cursor */
+.navbar-toggler-icon-wrapper,
+.navbar-brand,
+.goto-intro,
+.goto-projects,
+.goto-contact,
+#formspree-logo,
+#appearance-toggle {
+  cursor: pointer;
+}
+
 #navbar .nav-link.active {
   font-weight: 500;
 }

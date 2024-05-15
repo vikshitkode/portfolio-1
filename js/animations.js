@@ -15,6 +15,42 @@ const projectsSection = $("#projects");
 const contactSection = $("#contact");
 const sendIcon = $("#send-icon");
 
+let texts = ["Huy Bui", "therealFoxster"];
+let index = 0;
+let text = "";
+let isDeleting = false;
+let timerId;
+const titleText = $("#title>span");
+
+function type() {
+    if (text.length < texts[index].length) {
+        text += texts[index][text.length];
+        titleText.innerText = text;
+    } else {
+        titleText.classList.add("not-typing");
+        clearInterval(timerId);
+        setTimeout(() => {
+            isDeleting = true;
+            timerId = setInterval(deleteText, 75); // Delete speed
+        }, 7000); // Wait time
+    }
+}
+
+function deleteText() {
+    if (text.length > 0) {
+        titleText.classList.remove("not-typing");
+        text = text.slice(0, -1);
+        titleText.innerText = text;
+    } else {
+        clearInterval(timerId);
+        isDeleting = false;
+        index = (index + 1) % texts.length;
+        timerId = setInterval(type, 200);
+    }
+}
+
+timerId = setInterval(type, 200); // Type speed
+
 NodeList.prototype.setAnimation = function (a) {
     this.forEach(e => e.style.animation = a);
 }
