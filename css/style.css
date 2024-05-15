@@ -24,7 +24,7 @@
   content: '|';
   color: var(--azure);
   font-size: 1.275rem;
-  /* margin-bottom: 80px; */
+  vertical-align: 1px;
 }
 
 #title>span.not-typing:after {
