@@ -17,10 +17,6 @@
   cursor: pointer;
 }
 
-#navbar .nav-link.active {
-  font-weight: 500;
-}
-
 a[class*="link-"] {
   text-decoration: none;
 }

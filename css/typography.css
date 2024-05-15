@@ -6,16 +6,20 @@
     Copyright (c) 2024 Foxster. All rights reserved.
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", Arial, sans-serif !important;
+  /* font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", Arial, sans-serif !important; */
+  font-family: "Inter", Arial, sans-serif !important;
+  /* letter-spacing: -0.05px; */
 }
 
 .fs-14px {
   font-size: 14px;
 }
 
-.fw-kinda-bold {
-  font-weight: 500;
+h1, h2, h3, h4, h5, h6, .fw-kinda-bold, #navbar .nav-link.active {
+  font-weight: 550;
 }
 
 h5 {
