@@ -31,7 +31,7 @@ function type() {
         clearInterval(timerId);
         setTimeout(() => {
             isDeleting = true;
-            timerId = setInterval(deleteText, 75); // Delete speed
+            timerId = setInterval(deleteText, 100); // Delete speed
         }, 7000); // Wait time
     }
 }
