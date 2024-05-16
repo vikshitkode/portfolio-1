@@ -32,7 +32,7 @@ function type() {
         setTimeout(() => {
             isDeleting = true;
             timerId = setInterval(deleteText, 100); // Delete speed
-        }, 7000); // Wait time
+        }, 9000); // Wait time
     }
 }
 
@@ -45,11 +45,11 @@ function deleteText() {
         clearInterval(timerId);
         isDeleting = false;
         index = (index + 1) % texts.length;
-        timerId = setInterval(type, 200);
+        timerId = setInterval(type, 150);
     }
 }
 
-timerId = setInterval(type, 200); // Type speed
+timerId = setInterval(type, 150); // Type speed
 
 NodeList.prototype.setAnimation = function (a) {
     this.forEach(e => e.style.animation = a);
