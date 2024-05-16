@@ -36,8 +36,11 @@
   z-index: 2;
 }
 
-.tile h2 {
-  font-size: 2.275rem;
+/* Before md */
+@media (max-width: 767px) {
+  .tile h2 {
+    font-size: 2.275rem;
+  }
 }
 
 .tile h5 {
