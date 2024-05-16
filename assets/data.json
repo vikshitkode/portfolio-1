@@ -5,7 +5,7 @@
     },
     "intro": {
         "heading": "You know, I'm something of a <span style=\"color: var(--azure);\">computer scientist</span> myself.",
-        "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!\nI received my diploma from Douglas College about two years ago currently attending Simon Fraser University to complete my bachelor's degree. I look forward to the exciting opportunities and challenges that lie ahead!"
+        "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!\nI'm currently a 4<sup>th</sup> year CS student at SFU working as a full-stack web developer at iData Research."
     },
     "skills": {
         "heading": "Skills",
@@ -26,7 +26,7 @@
             {
                 "heading": "Mobile development",
                 "cover_description": "As a passionate Apple fan, I've devoted a significant amount of my free time learning about iOS and, more recently, getting the hang of iOS app and tweak development.",
-                "description": "I've always been fascinated with user-friendly software (ever since I was a kid). My interest in iOS development ultimately developed from this passion. Along the way, I created various mini-projects to familiarize myself with the various iOS frameworks and guidelines.\nMore recently, I ventured into iOS tweak development as a result of some frustrations with the iOS YouTube app. The outcome? \"DontEatMyContent,\" a tweak that cleverly prevents display cutouts from cutting into video content in YouTube, prioritizing an immersive video watching experience.\nAdditionally, I was introduced to Android app development through a college course, and that's when I created \"BCExplorer.\" This lil app is all about making the most out of your stay in British Columbia by showcasing some fantastic attractions you shouldn't miss.",
+                "description": "I've always been fascinated by user-friendly software, a passion that led me to iOS development. Along the way, I created various mini-projects to learn iOS frameworks and guidelines. One of my coolest project to date is \"DontEatMyContent,\" a tweak for the iOS YouTube app which prevents display cutouts from interfering with videos for a better viewing experience.\n\nI also explored Android app development in a college course, creating \"BCExplorer,\" an app showcasing must-see attractions in British Columbia.",
                 "img": "assets/img/mockups/iphone/iphone-today-1.png",
                 "img_type": "device",
                 "img_alt": "iphone-app",
