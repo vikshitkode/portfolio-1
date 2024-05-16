@@ -71,9 +71,9 @@
 *****************/
 
 .text-matte-light {
-  color: lightgray;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .text-matte-dark {
-  color: rgb(0, 0, 0, 0.75);
+  color: rgba(0, 0, 0, 0.5);
 }
