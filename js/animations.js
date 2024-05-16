@@ -137,9 +137,12 @@ $(".goto-projects").addEventListener("click", () =>
 );
 
 // Go to contact section
-$(".goto-contact").addEventListener("click", () =>
-    contactSection.scrollIntoView(scrollIntoViewOptions)
-);
+$$(".goto-contact").forEach(item => {
+    item.addEventListener("click", (e) => {
+        e.preventDefault();
+        contactSection.scrollIntoView(scrollIntoViewOptions);
+    });
+});
 
 //
 // Plus go X!
