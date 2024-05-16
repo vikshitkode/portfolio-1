@@ -11,11 +11,15 @@
 * {
   /* font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", Arial, sans-serif !important; */
   font-family: "Inter", Arial, sans-serif !important;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.0075em;
 }
 
 .fs-14px {
   font-size: 14px;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.025em;
 }
 
 h1, h2, h3, h4, h5, h6, .fw-kinda-bold, #navbar .nav-link.active {
@@ -24,6 +28,7 @@ h1, h2, h3, h4, h5, h6, .fw-kinda-bold, #navbar .nav-link.active {
 
 h5 {
   margin-bottom: .5rem !important;
+  font-size: 1.20rem;
 }
 
 h2 {
