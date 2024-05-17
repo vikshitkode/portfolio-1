@@ -18,6 +18,14 @@
   font-size: 14px;
 }
 
+.navbar-brand {
+  font-size: calc(var(--bs-navbar-brand-font-size) - 0.05rem);
+}
+
+.nav-link {
+  font-size: 0.925rem;
+}
+
 h1, h2, h3 {
   letter-spacing: -0.025em;
 }
