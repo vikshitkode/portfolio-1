@@ -11,7 +11,7 @@
         "heading": "Skills",
         "color": "var(--orange)",
         "muted_color": "#eb8534",
-        "description": "I've always enjoyed exploring and experimenting with a wide range of technologies. My strength is in my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes!",
+        "description": "I've always enjoyed exploring and experimenting with a wide range of technologies. My strength is in my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes.",
         "list": [
             {
                 "heading": "Web development",
@@ -35,7 +35,7 @@
             },
             {
                 "heading": "Automation & scripting",
-                "cover_description": "Command-line tools are goated 🐐 – unassuming in appearance but highly effective at getting the job done without unnecessary frills.",
+                "cover_description": "Command-line tools are GOATed 🐐 – unassuming in appearance but highly effective at getting the job done without unnecessary frills.",
                 "description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a variety of things, from automating tasks, compiling and packaging C code into iOS tweaks, to tinkering with system services. Its versatility and compatibility with Unix-based systems make it the ideal solution for streamlining processes and automating repetitive tasks.",
                 "img": "assets/img/window-terminal.png",
                 "img_type": "window",
@@ -48,7 +48,7 @@
             {
                 "heading": "Database programming",
                 "cover_description": "Why did the database engineer leave his wife?",
-                "description": "🥁 \"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
+                "description": "\"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
                 "center_image": true,
                 "bootstrap_icon": "bi-hdd-rack",
                 "md_size": 6,
