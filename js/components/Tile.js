@@ -42,10 +42,10 @@ export const Tile = (item, primaryColor, secondaryColor, customCoverDescriptionH
           </div>`; html += `
         </div>
         <div class="tile-overlay p-4-5 p-md-5 fs-6 rounded-5 lh-md fw-kinda-bold initially-hidden d-none">
-          <div class="d-flex flex-column align-items-center justify-content-center h-100 text-white">`;
+          <div class="d-flex flex-column align-items-center justify-content-center h-100 text-white"><div>`;
   if (item.description) item.description.split("\n").forEach(line => html += `
             <p>${line}</p>`); html += `
-          </div>
+          </div></div>
         </div>`; html += `
         <span class="tile-overlay-background rounded-5 initially-hidden"
           style="background-color: ${primaryColor};">
