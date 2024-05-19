@@ -49,7 +49,7 @@
 /* Rotate to original orientation */
 .navbar-toggler .navbar-toggler-bread {
   position: absolute;
-  right: 5%;
+  right: calc(var(--bs-gutter-x) * .6);
   transition: transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96),
     -webkit-transform .1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
   transform: none;
