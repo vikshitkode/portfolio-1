@@ -84,13 +84,16 @@ i.bi.bi-chevron-down {
     margin-bottom: 0.5rem;
   }
 
-  #navbar {
-    padding: calc(var(--bs-navbar-padding-y) * .5) var(--bs-navbar-padding-x);
-  }
-
   #navbar-content {
     margin-left: 2%;
     margin-right: 2%;
+  }
+}
+
+/* lg */
+@media (max-width: 991px) {
+  #navbar {
+    padding: calc(var(--bs-navbar-padding-y) * .5) var(--bs-navbar-padding-x);
   }
 }
 
