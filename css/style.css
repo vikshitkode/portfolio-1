@@ -94,7 +94,7 @@ i.bi.bi-chevron-down {
   }
 
   .navbar-collapse.collapsing {
-    transition: height 0.5s ease-in-out;
+    transition: height 0.45s ease-in-out;
   }
 
   .collapsing-in .nav-item {
@@ -123,6 +123,12 @@ i.bi.bi-chevron-down {
   
   .nav-item {
     opacity: 0;
+    padding-left: 2rem;
+  }
+
+  .nav-item a {
+    font-size: 1.375rem !important;
+    font-weight: 550;
   }
   
   .collapsing-out .nav-item {

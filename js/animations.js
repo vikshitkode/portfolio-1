@@ -55,16 +55,17 @@ const navbarContent = $("#navbar-content");
 const title = $("#title");
 
 navbarContent.addEventListener("show.bs.collapse", function () {
-    // Prevent scrolling when navbar is visible
-    document.body.style.overflow = "hidden";
-    // title.style.animation = "fade_out 0.25s ease-in-out both";
+    document.body.style.overflow = "hidden"; // Prevent scrolling when navbar is visible
+    title.style.pointerEvents = "none";
+    title.style.animation = "fade_out 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-out');
     navbarContent.classList.add('collapsing-in');
 });
 
 navbarContent.addEventListener("hide.bs.collapse", function () {
     document.body.style.overflow = "auto";
-    // title.style.animation = "fade_in 0.25s 0.25s ease-in-out both";
+    title.style.pointerEvents = "auto";
+    title.style.animation = "fade_in 0.25s 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-in');
     navbarContent.classList.add('collapsing-out');
 });
