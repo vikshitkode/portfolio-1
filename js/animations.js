@@ -55,7 +55,7 @@ const navbarContent = $("#navbar-content");
 const title = $("#title");
 
 navbarContent.addEventListener("show.bs.collapse", function () {
-    document.body.style.overflow = "hidden"; // Prevent scrolling when navbar is visible
+    document.body.style.touchAction = 'none'; // Prevent scrolling when navbar is visible
     title.style.pointerEvents = "none";
     title.style.animation = "fade_out 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-out');
@@ -63,7 +63,7 @@ navbarContent.addEventListener("show.bs.collapse", function () {
 });
 
 navbarContent.addEventListener("hide.bs.collapse", function () {
-    document.body.style.overflow = "auto";
+    document.body.style.touchAction = 'auto';
     title.style.pointerEvents = "auto";
     title.style.animation = "fade_in 0.25s 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-in');
