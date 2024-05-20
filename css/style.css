@@ -90,7 +90,43 @@ i.bi.bi-chevron-down {
   }
 
   #navbar-content #filler {
-    height: 90vh;
+    height: 75vh;
+  }
+
+  .navbar-collapse.collapsing {
+    transition: height 0.5s ease-in-out;
+  }
+
+  .collapsing-in .nav-item {
+    animation: fade_in 0.5s ease-in-out forwards;
+  }
+  
+  .collapsing-in .nav-item:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+  
+  .collapsing-in .nav-item:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .collapsing-in .nav-item:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+  
+  .collapsing-in .nav-item:nth-child(4) {
+    animation-delay: 0.2s;
+  }
+  
+  .collapsing-in .nav-item:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+  
+  .nav-item {
+    opacity: 0;
+  }
+  
+  .collapsing-out .nav-item {
+    animation: fade_out 0.25s ease-in-out forwards;
   }
 }
 
