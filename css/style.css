@@ -88,6 +88,10 @@ i.bi.bi-chevron-down {
     margin-left: 2%;
     margin-right: 2%;
   }
+
+  #navbar-content #filler {
+    height: 90vh;
+  }
 }
 
 /* lg */
