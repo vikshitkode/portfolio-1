@@ -20,25 +20,27 @@ $("#light-appearance").addEventListener("click", () => setPreferredAppearance("l
 $("#dark-appearance").addEventListener("click", () => setPreferredAppearance("dark"));
 $("#auto-appearance").addEventListener("click", () => setPreferredAppearance("auto"));
 
-NodeList.prototype.setBackgroundColor = function(s) {
+NodeList.prototype.setBackgroundColor = function (s) {
     this.forEach(element => element.style.backgroundColor = s);
 }
-NodeList.prototype.addClass = function(c) {
+NodeList.prototype.addClass = function (c) {
     this.forEach(element => element.classList.add(c));
 }
-NodeList.prototype.removeClass = function(c) {
+NodeList.prototype.removeClass = function (c) {
     this.forEach(element => element.classList.remove(c));
 }
+
+const isNavbarCollapsed = () => !navBar.classList.contains("not-collapsed");
 
 const lightAppearance = () => {
     navBar.classList.remove("navbar-dark");
     navBarTogglerBreadCrusts.setBackgroundColor("var(--dark-secondary)");
-    blurBackgroundElements.setBackgroundColor("var(--nav-background)");
+    blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background)" : "var(--light-secondary)");
     lightOutlineButtons.removeClass("btn-outline-light");
     lightOutlineButtons.addClass("btn-outline-primary");
     matteLightTexts.addClass("text-matte-dark");
     miscelllaneousElements.setBackgroundColor("var(--light-secondary)");
-    
+
     $$(".text-light").addClass("text-dark");
     $$(".bg-light-secondary").removeClass("bg-dark-secondary");
     $$(".bg-light").removeClass("bg-dark");
@@ -48,20 +50,20 @@ const lightAppearance = () => {
 const darkAppearance = () => {
     navBar.classList.add("navbar-dark");
     navBarTogglerBreadCrusts.setBackgroundColor("var(--light-secondary)");
-    blurBackgroundElements.setBackgroundColor("var(--nav-background-dark)");
+    blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background-dark)" : "var(--dark-secondary)");
     lightOutlineButtons.removeClass("btn-outline-primary");
     lightOutlineButtons.addClass("btn-outline-light");
     matteLightTexts.removeClass("text-matte-dark");
     miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
-    
+
     $$(".text-light").removeClass("text-dark");
     $$(".bg-light-secondary").addClass("bg-dark-secondary");
     $$(".bg-light").addClass("bg-dark");
     $$(".app-icon").addClass("dark");
 };
 
+export const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)");
 const autoAppearance = () => {
-    const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)");
     // System appearance change listener (for "auto" only)
     darkModeEnabled.addEventListener("change", event => {
         if (getPreferredAppearance() == "auto")
@@ -77,18 +79,18 @@ function getPreferredAppearance() {
 
 function setPreferredAppearance(appearance) {
     const preferredAppearance = appearance.toLowerCase();
-    
+
     switch (preferredAppearance) {
-    case "light":
-        lightAppearance();
-        break;
-    case "dark":
-        darkAppearance();
-        break;
-    case "auto":
-    default:
-        autoAppearance();
-        break;
+        case "light":
+            lightAppearance();
+            break;
+        case "dark":
+            darkAppearance();
+            break;
+        case "auto":
+        default:
+            autoAppearance();
+            break;
     }
 
     // Set active appearance toggle

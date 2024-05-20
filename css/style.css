@@ -97,42 +97,46 @@ i.bi.bi-chevron-down {
     transition: height 0.45s ease-in-out;
   }
 
-  .collapsing-in .nav-item {
+  #navbar-content.collapsing-in .nav-item {
     animation: fade_in 0.5s ease-in-out forwards;
   }
   
-  .collapsing-in .nav-item:nth-child(1) {
+  #navbar-content.collapsing-in .nav-item:nth-child(1) {
     animation-delay: 0.05s;
   }
   
-  .collapsing-in .nav-item:nth-child(2) {
+  #navbar-content.collapsing-in .nav-item:nth-child(2) {
     animation-delay: 0.1s;
   }
   
-  .collapsing-in .nav-item:nth-child(3) {
+  #navbar-content.collapsing-in .nav-item:nth-child(3) {
     animation-delay: 0.15s;
   }
   
-  .collapsing-in .nav-item:nth-child(4) {
+  #navbar-content.collapsing-in .nav-item:nth-child(4) {
     animation-delay: 0.2s;
   }
   
-  .collapsing-in .nav-item:nth-child(5) {
+  #navbar-content.collapsing-in .nav-item:nth-child(5) {
     animation-delay: 0.25s;
   }
   
-  .nav-item {
+  #navbar-content .nav-item {
     opacity: 0;
     padding-left: 2rem;
   }
 
-  .nav-item a {
-    font-size: 1.375rem !important;
+  #navbar-content .nav-item a {
+    font-size: 1.65rem !important;
     font-weight: 550;
   }
   
-  .collapsing-out .nav-item {
+  #navbar-content.collapsing-out .nav-item {
     animation: fade_out 0.25s ease-in-out forwards;
+  }
+
+  #main-container {
+    transition: opacity 0.5s ease;
   }
 }
 

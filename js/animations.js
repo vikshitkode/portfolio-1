@@ -7,6 +7,7 @@
 //
 
 import { $, $$ } from "./lib.js";
+import { darkModeEnabled } from "./appearance.js";
 
 const greetingSection = $("#greeting");
 const introSection = $("#intro");
@@ -51,23 +52,45 @@ function deleteText() {
 
 timerId = setInterval(type, 150); // Type speed
 
+const navbar = $("#navbar");
 const navbarContent = $("#navbar-content");
 const title = $("#title");
+const mainContainer = $("#main-container");
 
 navbarContent.addEventListener("show.bs.collapse", function () {
-    document.body.style.touchAction = 'none'; // Prevent scrolling when navbar is visible
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when navbar is visible
     title.style.pointerEvents = "none";
     title.style.animation = "fade_out 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-out');
     navbarContent.classList.add('collapsing-in');
+    navbar.style.backgroundColor = darkModeEnabled.matches ? "var(--dark-secondary)" : "var(--light-secondary)";
+    navbar.classList.add("not-collapsed");
+    mainContainer.style.opacity = 0;
 });
 
 navbarContent.addEventListener("hide.bs.collapse", function () {
-    document.body.style.touchAction = 'auto';
+    document.body.style.overflow = 'auto';
     title.style.pointerEvents = "auto";
     title.style.animation = "fade_in 0.25s 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-in');
     navbarContent.classList.add('collapsing-out');
+    navbar.classList.remove("not-collapsed");
+    mainContainer.style.opacity = 100;
+});
+
+navbarContent.addEventListener("hide.bs.collapse", function () {
+    setTimeout(() => {
+        navbar.style.backgroundColor = darkModeEnabled.matches ? "var(--nav-background-dark)" : "var(--nav-background)";
+    }, 100);
+});
+
+// Collapse navbar when mobile settings no longer applies
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 576) {
+        var navbarContent = $("#navbar-content");
+        var bsCollapse = new bootstrap.Collapse(navbarContent, { toggle: false });
+        bsCollapse.hide();
+    }
 });
 
 NodeList.prototype.setAnimation = function (a) {
