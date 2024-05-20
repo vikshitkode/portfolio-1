@@ -20,6 +20,15 @@
   scroll-behavior: smooth;
 }
 
+img.pfp {
+  border-radius: 50%;
+  width: 1.35em;
+}
+
+#navbar {
+  padding: calc(var(--bs-navbar-padding-y) * .75) var(--bs-navbar-padding-x);
+}
+
 #navbar .container-sm {
   padding-left: calc(var(--bs-gutter-x) * .25);
 }

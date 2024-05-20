@@ -18,8 +18,8 @@
   /* --greeting-gradient: linear-gradient(rgb(6, 15, 33) 30%, black 90%); */
   /* --greeting-gradient: linear-gradient(rgb(33, 0, 20) 30%, black 90%); */
   --greeting-gradient: linear-gradient(var(--dark-secondary) 10%, black 70%);
-  --nav-background: rgba(240, 240, 240, 0.9);
-  --nav-background-dark: rgb(55, 55, 55, 0.9);
+  --nav-background: rgba(240, 240, 240, 0.8);
+  --nav-background-dark: rgb(55, 55, 55, 0.8);
 
   --azure: #027fff;
   --orange: #e66702;

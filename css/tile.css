@@ -176,11 +176,6 @@
 }
 
 /* Images */
-img.pfp {
-  border-radius: 50%;
-  width: 1.5em;
-}
-
 img.device {
   filter: drop-shadow(10px 15px 15px rgb(0, 0, 0, 0.35));
   height: 575px;
