@@ -15,6 +15,7 @@
   border: 0;
   outline: none;
   box-shadow: none;
+  padding-bottom: 2px;
 }
 
 /* 
@@ -65,9 +66,9 @@
 }
 
 .navbar-toggler-bread-crust.top {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .navbar-toggler-bread-crust.bottom {
-  transform: translateY(3px);
+  transform: translateY(4px);
 }
