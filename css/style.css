@@ -37,6 +37,8 @@ img.pfp {
   content: '|';
   color: var(--azure);
   font-size: 1.275rem;
+  font-weight: 400;
+  margin-left: -2px;
 }
 
 #title>span.not-typing:after {
