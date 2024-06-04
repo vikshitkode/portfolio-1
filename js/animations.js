@@ -23,7 +23,7 @@ let isDeleting = false;
 let timerId;
 const titleText = $("#title>span");
 
-function type() {
+function typeText() {
     if (text.length < texts[index].length) {
         text += texts[index][text.length];
         titleText.innerText = text;
@@ -46,11 +46,11 @@ function deleteText() {
         clearInterval(timerId);
         isDeleting = false;
         index = (index + 1) % texts.length;
-        timerId = setInterval(type, 150);
+        timerId = setInterval(typeText, 150);
     }
 }
 
-timerId = setInterval(type, 150); // Type speed
+timerId = setInterval(typeText, 150); // Type speed
 
 const navbar = $("#navbar");
 const navbarContent = $("#navbar-content");
@@ -105,7 +105,7 @@ const addIntersectionObserverFor = (element, callback) => {
     return new IntersectionObserver(callback, {
         root: null,
         rootMargin: '0px',
-        threshold: 0.17
+        threshold: 0.1
     }).observe(element);
 };
 
