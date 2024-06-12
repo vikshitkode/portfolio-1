@@ -222,8 +222,15 @@
                     style="min-height: unset !important; background: linear-gradient(25deg, var(--very-dark-grey) 45%, var(--dark-secondary) 90%); overflow: hidden;">
                     <!-- Content -->
                     <div class="tile-content row row-cols-1" style="height: 80vh">
+                      <style>
+                        @media (min-width: 768px) {
+                          .special {
+                            padding-right: 0 !important;
+                          }
+                        }
+                      </style>
                       <!-- Text -->
-                      <div class="col col-md-4 d-flex flex-row align-items-center p-5">
+                      <div class="col col-md-4 d-flex flex-row align-items-center p-5 special">
                         <div class="text-center text-sm-start px-3 ps-lg-5">
                           <h2 class="text-white mb-3">
                             Discover how this <span style="color: var(--tomato);">portfolio</span> was built.
