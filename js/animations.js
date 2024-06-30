@@ -74,14 +74,11 @@ navbarContent.addEventListener("hide.bs.collapse", function () {
     title.style.animation = "fade_in 0.25s 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-in');
     navbarContent.classList.add('collapsing-out');
-    navbar.classList.remove("not-collapsed");
-    mainContainer.style.opacity = 100;
-});
-
-navbarContent.addEventListener("hide.bs.collapse", function () {
     setTimeout(() => {
         navbar.style.backgroundColor = darkModeEnabled.matches ? "var(--nav-background-dark)" : "var(--nav-background)";
     }, 100);
+    navbar.classList.remove("not-collapsed");
+    mainContainer.style.opacity = 100;
 });
 
 // Collapse navbar when mobile settings no longer applies
