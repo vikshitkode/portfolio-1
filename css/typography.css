@@ -45,6 +45,9 @@ h2 {
 
 /* Before md */
 @media (max-width: 767px) {
+  .fs-5 {
+    font-size: 1.15rem!important;
+  }
   .display-1 {
     font-size: calc(1.75rem + 5vw);
   }
