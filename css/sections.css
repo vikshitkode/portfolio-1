@@ -33,6 +33,16 @@
   height: 100vh;
 }
 
+#timeline {
+  margin-top: 7.5rem !important;
+  margin-bottom: 2rem !important;
+}
+
+#timeline img {
+  width: 120px;
+  border-radius: 50%;
+}
+
 .technologies-row {
   animation: scroll 90s linear infinite;
 }

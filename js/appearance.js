@@ -12,7 +12,6 @@ const navBar = $("#navbar");
 const navBarTogglerBreadCrusts = $$("#navbar .navbar-toggler-bread-crust");
 const blurBackgroundElements = $$(".bg-blur");
 const lightOutlineButtons = $$(".btn-outline-light");
-const matteLightTexts = $$(".text-matte-light");
 const miscelllaneousElements = $$("#main-container, body, footer");
 
 // Toggles
@@ -38,9 +37,9 @@ const lightAppearance = () => {
     blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background)" : "var(--light-secondary)");
     lightOutlineButtons.removeClass("btn-outline-light");
     lightOutlineButtons.addClass("btn-outline-primary");
-    matteLightTexts.addClass("text-matte-dark");
     miscelllaneousElements.setBackgroundColor("var(--light-secondary)");
-
+    
+    $$(".text-matte-light").addClass("text-matte-dark");
     $$(".text-light").addClass("text-dark");
     $$(".bg-light-secondary").removeClass("bg-dark-secondary");
     $$(".bg-light").removeClass("bg-dark");
@@ -53,9 +52,9 @@ const darkAppearance = () => {
     blurBackgroundElements.setBackgroundColor(isNavbarCollapsed() ? "var(--nav-background-dark)" : "var(--dark-secondary)");
     lightOutlineButtons.removeClass("btn-outline-primary");
     lightOutlineButtons.addClass("btn-outline-light");
-    matteLightTexts.removeClass("text-matte-dark");
     miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
-
+    
+    $$(".text-matte-light").removeClass("text-matte-dark");
     $$(".text-light").removeClass("text-dark");
     $$(".bg-light-secondary").addClass("bg-dark-secondary");
     $$(".bg-light").addClass("bg-dark");

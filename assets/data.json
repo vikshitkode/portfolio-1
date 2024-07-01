@@ -5,7 +5,27 @@
     },
     "intro": {
         "heading": "\"You know, I'm something of a <span style=\"color: var(--azure);\">scientist</span> myself.\"",
-        "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!\nI'm currently a 4<sup>th</sup> year CS student at SFU working as a full-stack web developer at iData Research."
+        "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!",
+        "timeline": [
+            {
+                "title": "Dip, Computing Studies <br>and Information Systems",
+                "subtitle": "Douglas College",
+                "date": "September 2020 - April 2022",
+                "img" : "assets/img/logos/douglas-college.jpg"
+            },
+            {
+                "title": "BSc, Computing Science",
+                "subtitle": "Simon Fraser University",
+                "date": "January 2023 - Present",
+                "img" : "assets/img/logos/sfu.png"
+            },
+            {
+                "title": "Web Developer",
+                "subtitle": "iData Research",
+                "date": "May 2024 - Present",
+                "img" : "assets/img/logos/idata-research.png"
+            }
+        ]
     },
     "skills": {
         "heading": "Skills",

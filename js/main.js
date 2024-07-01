@@ -21,6 +21,20 @@ fetchJSON("assets/data.json").then(data => {
     data.intro.description.split("\n").forEach(line =>
         $("#intro .tile-overlay div>p").insertAdjacentHTML("beforeend", `<p>${line}</p>`)
     );
+    data.intro.timeline.forEach(milestone => {
+        $("#timeline>.row").insertAdjacentHTML("beforeend", `
+            <div class="col-md-4 col-lg-4 p-4">
+              <div class="d-flex flex-column align-items-center text-center gap-3 px-3">
+                <img src="${milestone.img}" alt="${milestone.img.split(".") + "-logo"}" class="app-icon">
+                <p>
+                  <span class="fw-kinda-bold">${milestone.title}</span><br>
+                  <span>${milestone.subtitle}</span><br>
+                  <span class="text-matte-light">${milestone.date}</span><br>
+                </p>
+              </div>
+            </div>
+        `);
+    })
 
     // Skills
     const rows = $$(".technologies-row");
