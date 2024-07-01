@@ -101,7 +101,11 @@
                 "img_alt": "donteatmycontent-demo",
                 "center_image": true,
                 "md_size": 6,
-                "lg_size": 8
+                "lg_size": 8,
+                "custom_url_2": {
+                    "text": "View iDownloadBlog article",
+                    "url": "https://www.idownloadblog.com/2022/09/22/donteatmycontent/"
+                }
             },
             {
                 "heading": "uYouPlus",
@@ -131,7 +135,11 @@
                 "img_type": "device",
                 "img_alt": "altsource-demo",
                 "md_size": 6,
-                "lg_size": 4
+                "lg_size": 4,
+                "custom_url_2": {
+                    "text": "View deployment",
+                    "url": "https://therealfoxster.github.io/altsource-viewer/"
+                }
             },
             {
                 "heading": "CollabHub",

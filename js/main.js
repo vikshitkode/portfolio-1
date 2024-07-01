@@ -74,6 +74,18 @@ fetchJSON("assets/data.json").then(data => {
             </span>
             <i class="bi bi-chevron-right"></i>
         </a>
+        ${project.custom_url_2 ? `
+        <a target="_blank"
+            href="${project.custom_url_2.url}"
+            class="fs-6 link-primary d-block" role="button"
+            style="margin-top: -5px; margin-bottom: 10px; width: fit-content;"
+        >
+            <span class="link-text fw-normal">
+                ${project.custom_url_2.text}
+            </span>
+            <i class="bi bi-chevron-right"></i>
+        </a>
+        ` : ""}
         <!-- Topics -->
         <p>`;
         // Grab project topics from data.json
