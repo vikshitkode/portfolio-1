@@ -54,6 +54,15 @@
                 "md_size": 6
             },
             {
+                "heading": "Database programming",
+                "cover_description": "Why did the database engineer leave his wife?",
+                "description": "\"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
+                "center_image": true,
+                "bootstrap_icon": "bi-hdd-rack",
+                "md_size": 6,
+                "lg_size": 4
+            },
+            {
                 "heading": "Automation & scripting",
                 "cover_description": "Command-line tools are GOATed 🐐 – unassuming in appearance but highly effective at getting the job done without unnecessary frills.",
                 "description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a variety of things, from automating tasks, compiling and packaging C code into iOS tweaks, to tinkering with system services. Its versatility and compatibility with Unix-based systems make it the ideal solution for streamlining processes and automating repetitive tasks.",
@@ -64,15 +73,6 @@
                 "bootstrap_icon": "bi-terminal",
                 "md_size": 6,
                 "lg_size": 8
-            },
-            {
-                "heading": "Database programming",
-                "cover_description": "Why did the database engineer leave his wife?",
-                "description": "\"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
-                "center_image": true,
-                "bootstrap_icon": "bi-hdd-rack",
-                "md_size": 6,
-                "lg_size": 4
             }
         ]
     },
