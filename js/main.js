@@ -113,7 +113,7 @@ fetchJSON("assets/data.json").then(data => {
         projectPromises.push(promise);
     });
 
-    projectTiles.forEach(tile => $("#source-code").insertAdjacentHTML("beforebegin", tile));
+    projectTiles.forEach(tile => $("#projects .row").insertAdjacentHTML("beforeend", tile));
 
     // Successfully fetched data from GitHub API
     // Promise.all(projectPromises).then(tiles => {
