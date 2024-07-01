@@ -30,7 +30,7 @@
     "skills": {
         "heading": "Skills",
         "color": "var(--orange)",
-        "muted_color": "#eb8534",
+        "muted_color": "#ff9238",
         "description": "I've always enjoyed exploring and experimenting with a wide range of technologies. My strength is in my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes.",
         "list": [
             {
