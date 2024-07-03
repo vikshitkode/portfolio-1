@@ -36,7 +36,7 @@
             {
                 "heading": "Web development",
                 "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all scales and complexities, I'm ready to tackle any challenge thrown my way. 👊",
-                "description": "My college courses and projects have equipped me with a solid foundation of modern fullstack web technologies like Node.js, Express, and React. Overall, I've thoroughly enjoyed building robust and scalable web applications with these tools, and I'm always looking to expand my knowledge base.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
+                "description": "My college courses and projects have equipped me with a solid foundation of modern fullstack web technologies like Node.js, Express, and React. Overall, I've enjoyed building robust and scalable web applications with these tools, and I'm always looking to expand my knowledge base.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
                 "img": "assets/img/mockups/iphone/iphone-altsource-viewer-2.png",
                 "img_type": "device",
                 "img_alt": "iphone-web-app",
@@ -54,15 +54,6 @@
                 "md_size": 6
             },
             {
-                "heading": "Database programming",
-                "cover_description": "Why did the database engineer leave his wife?",
-                "description": "\"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
-                "center_image": true,
-                "bootstrap_icon": "bi-hdd-rack",
-                "md_size": 6,
-                "lg_size": 4
-            },
-            {
                 "heading": "Automation & scripting",
                 "cover_description": "Command-line tools are GOATed 🐐 – unassuming in appearance but highly effective at getting the job done without unnecessary frills.",
                 "description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a variety of things, from automating tasks, compiling and packaging C code into iOS tweaks, to tinkering with system services. Its versatility and compatibility with Unix-based systems make it the ideal solution for streamlining processes and automating repetitive tasks.",
@@ -73,6 +64,15 @@
                 "bootstrap_icon": "bi-terminal",
                 "md_size": 6,
                 "lg_size": 8
+            },
+            {
+                "heading": "Database programming",
+                "cover_description": "Why did the database engineer leave his wife?",
+                "description": "\"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
+                "center_image": true,
+                "bootstrap_icon": "bi-hdd-rack",
+                "md_size": 6,
+                "lg_size": 4
             }
         ]
     },
