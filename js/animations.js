@@ -7,7 +7,7 @@
 //
 
 import { $, $$ } from "./lib.js";
-import { darkModeEnabled } from "./appearance.js";
+import { isDarkModeEnabled } from "./appearance.js";
 
 const greetingSection = $("#greeting");
 const introSection = $("#intro");
@@ -63,7 +63,7 @@ navbarContent.addEventListener("show.bs.collapse", function () {
     title.style.animation = "fade_out 0.25s ease-in-out both";
     navbarContent.classList.remove('collapsing-out');
     navbarContent.classList.add('collapsing-in');
-    navbar.style.backgroundColor = darkModeEnabled.matches ? "var(--dark-secondary)" : "var(--light-secondary)";
+    navbar.style.backgroundColor = isDarkModeEnabled() ? "var(--dark-secondary)" : "var(--light-secondary)";
     navbar.classList.add("not-collapsed");
     mainContainer.style.opacity = 0;
 });
@@ -75,7 +75,7 @@ navbarContent.addEventListener("hide.bs.collapse", function () {
     navbarContent.classList.remove('collapsing-in');
     navbarContent.classList.add('collapsing-out');
     setTimeout(() => {
-        navbar.style.backgroundColor = darkModeEnabled.matches ? "var(--nav-background-dark)" : "var(--nav-background)";
+        navbar.style.backgroundColor = isDarkModeEnabled() ? "var(--nav-background-dark)" : "var(--nav-background)";
     }, 100);
     navbar.classList.remove("not-collapsed");
     mainContainer.style.opacity = 100;

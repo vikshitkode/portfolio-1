@@ -61,7 +61,7 @@ const darkAppearance = () => {
     $$(".app-icon").addClass("dark");
 };
 
-export const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)");
+const darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)");
 const autoAppearance = () => {
     // System appearance change listener (for "auto" only)
     darkModeEnabled.addEventListener("change", event => {
@@ -105,3 +105,9 @@ export function refreshAppearance() {
 }
 
 refreshAppearance();
+
+export function isDarkModeEnabled() {
+    if (getPreferredAppearance() == "auto")
+        return darkModeEnabled.matches;
+    return getPreferredAppearance() == "dark";
+}
