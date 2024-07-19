@@ -109,7 +109,14 @@
             },
             {
                 "heading": "uYouPlus",
-                "cover_description": "uYou+ is a modified version of uYou (made by @MiRO92) with additional features and mainly made for non jailbroken users!",
+                "cover_description": "Enhance your YouTube experience.",
+                "topics": [
+                    "c",
+                    "ios",
+                    "youtube",
+                    "objective-c",
+                    "reverse-engineering"
+                ],
                 "img": "assets/img/mockups/iphone/iphone-uyouplus.png",
                 "img_type": "device",
                 "img_alt": "uyouplus-demo",
