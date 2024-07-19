@@ -55,7 +55,7 @@ const darkAppearance = () => {
     lightOutlineButtons.removeClass("btn-outline-primary");
     lightOutlineButtons.addClass("btn-outline-light");
     miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
-    skillsTile.style.background = "linear-gradient(145deg, var(--dark-secondary) 20%, #ff9442 70%)";
+    skillsTile.style.background = "var(--dark-secondary)";
     
     $$(".text-matte-light").removeClass("text-matte-dark");
     $$(".text-light").removeClass("text-dark");
