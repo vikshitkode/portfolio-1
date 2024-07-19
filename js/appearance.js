@@ -13,6 +13,7 @@ const navBarTogglerBreadCrusts = $$("#navbar .navbar-toggler-bread-crust");
 const blurBackgroundElements = $$(".bg-blur");
 const lightOutlineButtons = $$(".btn-outline-light");
 const miscelllaneousElements = $$("#main-container, body, footer");
+const skillsTile = $("#skills .tile");
 
 // Toggles
 $("#light-appearance").addEventListener("click", () => setPreferredAppearance("light"));
@@ -38,6 +39,7 @@ const lightAppearance = () => {
     lightOutlineButtons.removeClass("btn-outline-light");
     lightOutlineButtons.addClass("btn-outline-primary");
     miscelllaneousElements.setBackgroundColor("var(--light-secondary)");
+    skillsTile.style.background = "linear-gradient(145deg, white 10%, #ffa560 70%)";
     
     $$(".text-matte-light").addClass("text-matte-dark");
     $$(".text-light").addClass("text-dark");
@@ -53,6 +55,7 @@ const darkAppearance = () => {
     lightOutlineButtons.removeClass("btn-outline-primary");
     lightOutlineButtons.addClass("btn-outline-light");
     miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
+    skillsTile.style.background = "linear-gradient(145deg, var(--dark-secondary) 20%, #ff9442 70%)";
     
     $$(".text-matte-light").removeClass("text-matte-dark");
     $$(".text-light").removeClass("text-dark");
