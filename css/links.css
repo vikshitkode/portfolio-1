@@ -27,12 +27,12 @@ a[class*="link-"]:hover {
 
 @media (hover: hover) {
   a.social-link {
-    transition: scale 0.35s ease;
+    transition: opacity 0.35s ease;
     text-decoration: none;
   }
 
   a.social-link:hover {
-    scale: 1.15;
+    opacity: 0.75;
   }
 
   #navbar .navbar-brand {
