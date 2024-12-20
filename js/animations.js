@@ -16,41 +16,41 @@ const projectsSection = $("#projects");
 const contactSection = $("#contact");
 const sendIcon = $("#send-icon");
 
-let texts = ["Huy Bui", "therealFoxster"];
-let index = 0;
-let text = "";
-let isDeleting = false;
-let timerId;
-const titleText = $("#title>span");
+// let texts = ["Huy Bui", "therealFoxster"];
+// let index = 0;
+// let text = "";
+// let isDeleting = false;
+// let timerId;
+// const titleText = $("#title>span");
 
-function typeText() {
-    if (text.length < texts[index].length) {
-        text += texts[index][text.length];
-        titleText.innerText = text;
-    } else {
-        titleText.classList.add("not-typing");
-        clearInterval(timerId);
-        setTimeout(() => {
-            isDeleting = true;
-            timerId = setInterval(deleteText, 100); // Delete speed
-        }, 9000); // Wait time
-    }
-}
+// function typeText() {
+//     if (text.length < texts[index].length) {
+//         text += texts[index][text.length];
+//         titleText.innerText = text;
+//     } else {
+//         titleText.classList.add("not-typing");
+//         clearInterval(timerId);
+//         setTimeout(() => {
+//             isDeleting = true;
+//             timerId = setInterval(deleteText, 100); // Delete speed
+//         }, 9000); // Wait time
+//     }
+// }
 
-function deleteText() {
-    if (text.length > 0) {
-        titleText.classList.remove("not-typing");
-        text = text.slice(0, -1);
-        titleText.innerText = text;
-    } else {
-        clearInterval(timerId);
-        isDeleting = false;
-        index = (index + 1) % texts.length;
-        timerId = setInterval(typeText, 150);
-    }
-}
+// function deleteText() {
+//     if (text.length > 0) {
+//         titleText.classList.remove("not-typing");
+//         text = text.slice(0, -1);
+//         titleText.innerText = text;
+//     } else {
+//         clearInterval(timerId);
+//         isDeleting = false;
+//         index = (index + 1) % texts.length;
+//         timerId = setInterval(typeText, 150);
+//     }
+// }
 
-timerId = setInterval(typeText, 150); // Type speed
+// timerId = setInterval(typeText, 150); // Type speed
 
 const navbar = $("#navbar");
 const navbarContent = $("#navbar-content");
