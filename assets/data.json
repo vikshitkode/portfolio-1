@@ -5,7 +5,7 @@
     },
     "intro": {
         "heading": "\"You know, I'm something of a <span style=\"color: var(--azure);\">scientist</span> myself.\"",
-        "description": "My passion is experimenting with technologies to create software that is both functional and easy to use. Many of my efforts, which were originally intended to address personal issues, have later proven useful to family members and netizens around the world. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!",
+        "description": "I enjoy experimenting with new technologies to make software that is user-friendly and functional. Originally aimed at personal problems, several of my endeavors have since been helpful to family members and internet users worldwide. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!",
         "timeline": [
             {
                 "title": "Dip, Computing Studies <br>and Information Systems",
@@ -31,12 +31,12 @@
         "heading": "Skills",
         "color": "var(--orange)",
         "muted_color": "#ff9238",
-        "description": "I've always enjoyed exploring and experimenting with a wide range of technologies. My strength is in my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes.",
+        "description": "My greatest strength is my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes!",
         "list": [
             {
                 "heading": "Web development",
-                "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all scales and complexities, I'm ready to tackle any challenge thrown my way. 👊",
-                "description": "My college courses and projects have equipped me with a solid foundation of modern fullstack web technologies like Node.js, Express, and React. Overall, I've enjoyed building robust and scalable web applications with these tools and I'm always looking to expand my knowledge base.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
+                "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all sizes and complexities, I'm ready to tackle any challenge thrown my way! 👊",
+                "description": "I have a strong background with modern full-stack web technologies like Node.js, Express, and React thanks to my undergrad coursework and projects. All in all, I've enjoyed using these technologies to create robust and scalable web applications, and I'm always trying to learn more.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
                 "img": "assets/img/mockups/iphone/iphone-altsource-viewer-2.png",
                 "img_type": "device",
                 "img_alt": "iphone-web-app",
@@ -45,8 +45,8 @@
             },
             {
                 "heading": "Mobile development",
-                "cover_description": "As a passionate Apple fan, I've devoted a significant amount of my free time learning about iOS and, more recently, getting the hang of iOS app and tweak development.",
-                "description": "I've always been fascinated by user-friendly software, a passion that led me to iOS development. Along the way, I created various mini-projects to learn iOS frameworks and guidelines. One of my coolest project to date is \"DontEatMyContent,\" a tweak for the iOS YouTube app which prevents display cutouts from interfering with videos for a better viewing experience.\n\nI also explored Android app development in a college course, creating \"BCExplorer,\" an app showcasing must-see attractions in British Columbia.",
+                "cover_description": "As a passionate Apple fan, I've spent a lot of my free time learning about iOS and, more recently, getting the hang of iOS development.",
+                "description": "I've always been fascinated by user-friendly software, a passion that led me to iOS development. I've built a number of side projects to familiarize myself with iOS frameworks and principles. One of my coolest project to date is \"DontEatMyContent,\" a tweak for the iOS YouTube app which prevents display cutouts from interfering with videos for a better viewing experience.\n\nI also dabbled in Android app development in a college course, creating \"BCExplorer,\" an app that highlights must-see attractions in British Columbia.",
                 "img": "assets/img/mockups/iphone/iphone-today-1.png",
                 "img_type": "device",
                 "img_alt": "iphone-app",
@@ -56,8 +56,8 @@
             },
             {
                 "heading": "Automation & scripting",
-                "cover_description": "Command-line tools are GOATed 🐐 – unassuming in appearance but highly effective at getting the job done without unnecessary frills.",
-                "description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a variety of things, from automating tasks, compiling and packaging C code into iOS tweaks, to tinkering with system services. Its versatility and compatibility with Unix-based systems make it the ideal solution for streamlining processes and automating repetitive tasks.",
+                "cover_description": "Command-line tools are goated 🐐 – they look simple yet are so incredibly powerful. They're my go-to when I need to get the job done without unnecessary frills.",
+                "description": "Shell scripting became a valuable tool in my toolkit in my software development journey. I've used it for a variety of things, from automating tasks, compiling and packaging C code into iOS tweaks, to tinkering with system services. Its versatility and compatibility with Unix-based systems make it the perfect tool for automating repetitive tasks.",
                 "img": "assets/img/window-terminal.png",
                 "img_type": "window",
                 "img_alt": "terminal",
@@ -68,8 +68,8 @@
             },
             {
                 "heading": "Database programming",
-                "cover_description": "Why did the database engineer leave his wife?",
-                "description": "\"She had one-to-many relationships.\" 🥁\nMy academic journey equipped me with a solid understanding of both relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems. This foundation allows me to design efficient schemas, optimize complex queries, and leverage the flexibility of NoSQL models for specific project needs.",
+                "cover_description": "\"Why did the database engineer leave his wife?\"",
+                "description": "\"She had one-to-many relationships.\" 🥁\nI gained a strong understanding of relational (MySQL, PostgreSQL) and non-relational (MongoDB) database systems during my undergrad career.  This knowledge has allowed me to design efficient schemas and optimize complex queries for specific project needs.",
                 "center_image": true,
                 "bootstrap_icon": "bi-hdd-rack",
                 "md_size": 6,
