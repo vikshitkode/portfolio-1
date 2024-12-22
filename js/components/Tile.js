@@ -12,7 +12,7 @@ export const Tile = (item, primaryColor, secondaryColor, customCoverDescriptionH
       col-md-${item.md_size ?? "12"}
       col-lg-${item.lg_size ?? item.md_size ?? "12"}
     ">
-      <div class="tile bg-light-secondary p-4-5 p-md-5 rounded-5 h-100 d-flex flex-column justify-content-between"`;
+      <div ${item.no_padding_bottom ? `style="padding-bottom:0!important;"` : ``} class="tile bg-light-secondary p-4-5 p-md-5 rounded-5 h-100 d-flex flex-column justify-content-between"`;
   if (!item.img && primaryColor) html += ` 
         style="background: linear-gradient(145deg, ${primaryColor} 45%, ${secondaryColor ?? primaryColor} 80%);"`; html += `
       >
@@ -29,7 +29,7 @@ export const Tile = (item, primaryColor, secondaryColor, customCoverDescriptionH
             ${customCoverDescriptionHTML ?? ""}
           </div>
           <div>
-            <img src="${item.img}" alt="${item.img_alt}" class="${item.img_type}">
+            <img src="${item.img}" alt="${item.img_alt}" class="${item.img_type}"  ${item.no_padding_bottom ? `style="height: unset; max-height:654px; margin-bottom: -2.25vw;"` : ``}>
           </div>
           ${item.center_image ? "<div></div>" : ""}`;
   else html += `

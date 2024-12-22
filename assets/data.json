@@ -50,6 +50,7 @@
                 "img": "assets/img/mockups/iphone/iphone-today-1.png",
                 "img_type": "device",
                 "img_alt": "iphone-app",
+                "no_padding_bottom": true,
                 "bootstrap_icon": "bi-phone",
                 "md_size": 6
             },
