@@ -1,29 +1,29 @@
 {
     "greeting": {
-        "heading": "Hello, World!",
-        "description": "I make things for iOS and the Web."
+        "heading": "Hello, Folks!",
+        "description": "I make things for iOS."
     },
     "intro": {
-        "heading": "\"You know, I'm something of a <span style=\"color: var(--azure);\">scientist</span> myself.\"",
+        "heading": "\"You know, I'm something of a <span style=\"color: var(--azure);\">nerd</span> myself.\"",
         "description": "I enjoy experimenting with new technologies to make software that is user-friendly and functional. Originally aimed at personal problems, several of my endeavors have since been helpful to family members and internet users worldwide. It's incredibly rewarding to know that I'm making a positive impact beyond my own needs!",
         "timeline": [
             {
-                "title": "Dip, Computing Studies <br>and Information Systems",
-                "subtitle": "Douglas College",
-                "date": "September 2020 - April 2022",
-                "img" : "assets/img/logos/douglas-college.jpg"
+                "title": "B.Tech, Computer Science",
+                "subtitle": "Amrita School of Engineering",
+                "date": "June 2018 - August 2022",
+                "img" : "assets/img/logos/Amrita_Vishwa_Vidyapeetham_Logo.png"
             },
             {
-                "title": "BSc, Computing Science",
-                "subtitle": "Simon Fraser University",
-                "date": "January 2023 - Present",
-                "img" : "assets/img/logos/sfu.png"
+                "title": "MS, Computing Science",
+                "subtitle": "Seattle University",
+                "date": "September 2023 - June 2025",
+                "img" : "assets/img/logos/Seattle_University_seal.png"
             },
             {
-                "title": "Web Developer",
-                "subtitle": "iData Research",
-                "date": "May 2024 - Present",
-                "img" : "assets/img/logos/idata-research.png"
+                "title": "Market Research Analyst",
+                "subtitle": "Student Market Research",
+                "date": "Nov 2023 - Present",
+                "img" : "assets/img/logos/seattle-university.png"
             }
         ]
     },
@@ -34,10 +34,10 @@
         "description": "My greatest strength is my ability to quickly grasp new concepts and adapt to different programming languages, tools, and platforms. This flexibility has allowed me to pull off a diverse array of projects of all shapes and sizes!",
         "list": [
             {
-                "heading": "Web development",
-                "cover_description": "With exposure to modern fullstack web technologies and experience working on web projects of all sizes and complexities, I'm ready to tackle any challenge thrown my way! 👊",
-                "description": "I have a strong background with modern full-stack web technologies like Node.js, Express, and React thanks to my undergrad coursework and projects. All in all, I've enjoyed using these technologies to create robust and scalable web applications, and I'm always trying to learn more.\nThat being said, many of my personal projects thrive on the simplicity and elegance of vanilla web technologies and GitHub Pages. For (smaller) personal projects, I've found that they're quick to set up and, best of all, cost nothing to publish and show off to the world! :D\nThis portfolio was made with vanilla HTML/CSS, JavaScript, and a sprinkle of Bootstrap for a responsive design. ✨",
-                "img": "assets/img/mockups/iphone/iphone-altsource-viewer-2.png",
+                "heading": "iOS Engineering",
+                "cover_description": "With a strong passion for Apple technologies, I've dedicated my time to mastering Swift, SwiftUI, and the fundamentals of iOS architecture. From building utility apps to exploring native APIs like CoreData and MapKit, I enjoy crafting sleek, responsive, and user-friendly experiences optimized for iOS. 👊",
+                "description": "I have a strong background in building native iOS applications using Swift and SwiftUI, which I've developed through my academic projects and personal learning. I’ve enjoyed creating apps that are not only functional but also aesthetically pleasing and aligned with Apple’s design principles. Many of my personal projects are centered around solving everyday problems with simple, elegant solutions whether that’s a custom reminder tool, a task planner, or experimenting with SwiftUI animations and gestures. That being said, I’m always exploring deeper integrations with the iOS ecosystem like using CoreData, CloudKit, or leveraging MapKit and SiriKit. I find joy in optimizing both the UI and the experience for real users. This portfolio was designed with SwiftUI in mind clean, responsive, and just like the apps I love to build. ✨",
+                "img": "assets/img/mockups/iphone/iphone-screen.png",
                 "img_type": "device",
                 "img_alt": "iphone-web-app",
                 "bootstrap_icon": "bi-globe2",
@@ -77,7 +77,7 @@
             }
         ]
     },
-    "github_username": "therealFoxster",
+    "github_username": "vikshitkode",
     "projects": {
         "heading": "Project Highlights",
         "color": "#f63e54",
@@ -85,28 +85,21 @@
         "description": "Still thinking of a good description for this section...",
         "list": [
             {
-                "heading": "DontEatMyContent",
-                "cover_description": "Prevent the notch/Dynamic Island from munching on 2:1 video content in YouTube.",
+                "heading": "StepBuddy",
+                "cover_description": "Track all your steps and weight with an Apple Health Kit Integrated App.",
                 "topics": [
-                    "c",
+                    "swiftui",
                     "ios",
-                    "youtube",
-                    "objective-c",
-                    "reverse-engineering",
-                    "iphone",
-                    "notch",
-                    "dynamic-island"
+                    "health-kit",
+                    "algorithms",
+                    "iphone"
                 ],
                 "img": "assets/img/mockups/iphone/iphone-donteatmycontent.png",
                 "img_type": "device landscape",
                 "img_alt": "donteatmycontent-demo",
                 "center_image": true,
                 "md_size": 6,
-                "lg_size": 8,
-                "custom_url_2": {
-                    "text": "View iDownloadBlog article",
-                    "url": "https://www.idownloadblog.com/2022/09/22/donteatmycontent/"
-                }
+                "lg_size": 8
             },
             {
                 "heading": "uYouPlus",
@@ -220,9 +213,9 @@
             },
             {
                 "not_on_github": true,
-                "heading": "Foxster",
+                "heading": "Vikshit Kode",
                 "cover_description": "YouTube channel dedicated to uploading electronic music in the NCS video layout.",
-                "custom_url": "https://youtube.com/@FoxsterNCS",
+                "custom_url": "https://youtube.com/@vikshitkode",
                 "custom_url_text": "View on YouTube",
                 "topics": [
                     "youtube",
@@ -242,25 +235,25 @@
     "socials": [
         {
             "platform": "github",
-            "username": "therealFoxster"
+            "username": "vikshitkode"
         },
         {
             "platform": "reddit",
-            "username": "therealFoxster",
+            "username": "vikshitkode",
             "username_prefix": "u/"
         },
         {
             "platform": "youtube",
-            "username": "foxster.mp4",
+            "username": "Vikshit Kode",
             "username_prefix": "@"
         },
         {
             "platform": "instagram",
-            "username": "maybehuy"
+            "username": "vikshitkode"
         },
         {
             "platform": "linkedin",
-            "username": "huybui-vq",
+            "username": "vikshitkode",
             "username_prefix": "in/"
         }
     ]

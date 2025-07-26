@@ -40,7 +40,7 @@ const lightAppearance = () => {
     lightOutlineButtons.addClass("btn-outline-primary");
     miscelllaneousElements.setBackgroundColor("var(--light-secondary)");
     skillsTile.style.background = "linear-gradient(145deg, white 10%, #ffa560 70%)";
-    
+
     $$(".text-matte-light").addClass("text-matte-dark");
     $$(".text-light").addClass("text-dark");
     $$(".bg-light-secondary").removeClass("bg-dark-secondary");
@@ -56,7 +56,7 @@ const darkAppearance = () => {
     lightOutlineButtons.addClass("btn-outline-light");
     miscelllaneousElements.setBackgroundColor("var(--dark-secondary)");
     skillsTile.style.background = "var(--dark-secondary)";
-    
+
     $$(".text-matte-light").removeClass("text-matte-dark");
     $$(".text-light").removeClass("text-dark");
     $$(".bg-light-secondary").addClass("bg-dark-secondary");
